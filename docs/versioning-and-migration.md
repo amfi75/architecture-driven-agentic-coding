@@ -12,7 +12,7 @@ Earlier snapshots and source history remain preserved in the original repository
 
 The recommended [reading workflow](../SETUP.md) retrieves method documents directly at one exact repository commit. A task records its selected revision; continued project use can keep a short reference in existing agent instructions. No vendored package is required. Core 2.3.0 and recommendations 1.2.0 remain unchanged. The commit also pins the detailed guides, which can evolve independently of the core version.
 
-The three-file snapshot retains its original offline-copy instructions as an alternative, not the default entry point. Existing local copies are not deleted or migrated automatically.
+The three-file snapshot provides a compact local reading option. Local copies can also support project-specific customization; record the source revision and distinguish local changes from upstream text. Existing local copies are not deleted or migrated automatically.
 
 ## Deliberate migration
 
@@ -31,4 +31,4 @@ Record the chosen revision and authorization, update only the intended reference
 
 ## Rollback
 
-Preserve the prior reference before migration. Revert that reference to its recorded revision if needed; do not overwrite historical snapshots. Preserve any explicitly requested offline copies separately. A method rollback does not undo product changes or approved requirements: assess those separately.
+Preserve the prior reference before migration. Revert that reference to its recorded revision if needed; do not overwrite historical snapshots. Preserve local copies and project-specific adaptations separately. A method rollback does not undo product changes or approved requirements: assess those separately.

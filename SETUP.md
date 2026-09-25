@@ -1,6 +1,6 @@
 # Read and use ADAC from the repository
 
-The recommended entry is a repository link and a task. Read the documents directly from that repository at one fixed revision. Do not install or copy ADAC into the target project by default. The filename SETUP.md is retained as the stable agent entry point; no installer, skill or runtime is required.
+The recommended entry is a repository link and a task. Read the documents directly from that repository at one fixed revision. No local copy is needed; copying the documents is also supported for local access, offline use or customization. The filename SETUP.md is retained as the stable agent entry point; no installer, skill or runtime is required.
 
 The [core](releases/2.3.0/core.md) defines the method. The detailed guides explain its practical application. Reading a link means retrieving and reading the actual document content, not assuming the link itself supplies the instructions.
 
@@ -34,11 +34,11 @@ For substantial work, independently review the complete initial plan and obtain 
 
 ## 3. Distinguish this session from continued project use
 
-For a one-off request, reading the documents is enough to establish the method context for this session. Do not create a local package or edit persistent instructions unless continued project use was requested. State the selected revision and which documents were actually read.
+For a one-off request, reading the documents is enough to establish the method context for this session. A local package or persistent instruction change is not needed. State the selected revision and which documents were actually read.
 
-For continued use across sessions, add only a short pinned reference to the project's existing agent instructions, using the entry point the host actually loads. This records where future agents must read the method; it does not embed the method documents in the project. Preserve unrelated instructions and existing pins. Create a supported project instruction file only when its loading mechanism is known and the requested integration authorizes it.
+For continued use across sessions, a short pinned reference in the project's existing agent instructions is sufficient, using the entry point the host actually loads. It can point to the repository or to a local copy, if that is how the project uses ADAC. Preserve unrelated instructions and existing pins. Create a supported project instruction file only when its loading mechanism is known and the requested integration authorizes it.
 
-A compact reference can follow this form. Replace placeholders with actual repository/revision links and verify them before saving:
+For direct repository reading, a compact reference can follow this form. Replace placeholders with actual repository/revision links and verify them before saving:
 
 ```text
 ADAC reference
@@ -47,15 +47,17 @@ Revision: <full commit ID>
 Read <revision-specific SETUP.md URL> and the core before assessing ADAC
 suitability. When ADAC is selected, retrieve and read the method guides
 listed there before architecture/task planning; pass relevant instructions
-to workers. Do not vendor ADAC or silently change this pin. Preserve the
+to workers. Preserve the selected pin unless an update is requested, and retain the
 project's requirements, permissions and existing approval gates.
 ```
 
 Read back the entry and check its links. Report current-session reading and persistent integration separately. A link written to disk is not evidence that a future agent has read it, and a host without persistent instruction support must not be reported as configured for future sessions. No unperformed host/adoption test is implied.
 
-## Access, offline use and updates
+## Optional local copies and updates
 
-Direct reading requires repository access whenever the agent needs to load the pinned documents. If that is unavailable, explain the missing access. A local documentation snapshot is an **explicit offline alternative**, not an automatic fallback; agree that alternative with the user before copying anything. Retain the same revision and reading instructions if that alternative is chosen.
+Direct reading requires repository access whenever the agent needs to load the pinned documents. If that is unavailable, explain the missing access; an available local copy can also provide the documents.
+
+Copying is optional and is useful for local access, offline work or project-specific customization. Keep the source revision with the copy, preserve the relative links between the documents you use, and point project instructions to the local entry point. If you adapt the text, identify the local changes so agents can distinguish the project variant from the upstream method. Existing requirements and permissions still govern its use.
 
 Changes upstream do not silently change the chosen revision. On an explicit update request, review the differences, preserve binding commitments and update only the relevant reference. To stop continued use, remove only the ADAC reference, not the rest of the project's instructions. Existing local copies from earlier setups are not deleted automatically. Global instructions and other projects require their own authority.
 

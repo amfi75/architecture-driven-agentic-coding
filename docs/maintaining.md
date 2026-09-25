@@ -1,6 +1,6 @@
 # Optional maintainer checks
 
-Agents normally [read ADAC directly from the repository](../SETUP.md). They do not copy this distribution or run maintainer tooling to use the method.
+Agents normally [read ADAC directly from the repository](../SETUP.md). Copying the documents is optional; maintainer tooling is not required to use the method.
 
 With Python 3.9+ from the repository root:
 

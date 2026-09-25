@@ -18,6 +18,6 @@ The maintainer reports roughly six months of successful practical use, including
 
 The method consists of Markdown instructions with no required provider, operating system or executable runtime. This is a property of the method, not a claim that every host or model has been tested. Direct repository reading depends on document access. Parallel execution, tool use and independent review depend on the agent host's capabilities and actual permissions.
 
-Optional Python maintainer checks help maintain this repository; they are not needed to read or apply ADAC. A local documentation copy is an explicit offline alternative, not the default project setup. Reading in one session and configuring a reference for future sessions are different outcomes; neither is a claim of a completed cross-host adoption test.
+Optional Python maintainer checks help maintain this repository; they are not needed to read or apply ADAC. A local documentation copy is optional and can support local access, offline use or customization. Reading in one session and configuring a reference for future sessions are different outcomes; neither is a claim of a completed cross-host adoption test.
 
 See [maintaining](maintaining.md) for repository checks and [design rationale](design-rationale.md) for the human and AI contributions.

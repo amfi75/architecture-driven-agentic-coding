@@ -20,4 +20,4 @@ Start with requirements, assess whether meaningful modular decomposition helps, 
 
 Use [bootstrap](../bootstrap/README.md) to start in a new or existing repository and the [task-package template](../templates/task-package.md) for a worker assignment. The [loop guide](../docs/agent-loop.md) illustrates return paths; the [architecture foundations](../docs/architecture-foundations.md) explain the theoretical sources and their application to agents.
 
-For the recommended direct-reading workflow, use the [agent reading guide](../SETUP.md). The [three-file release](../releases/2.3.0/README.md) remains an explicit offline reading option. For current evidence and its limits, see [verification](../docs/verification.md).
+For the recommended direct-reading workflow, use the [agent reading guide](../SETUP.md). The [three-file release](../releases/2.3.0/README.md) provides a compact local reading option; copying and customization are optional. For current evidence and its limits, see [verification](../docs/verification.md).

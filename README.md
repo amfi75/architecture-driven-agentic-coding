@@ -32,13 +32,13 @@ The orchestrator is an agent role, not a software controller. It can implement a
 
 Give your coding agent the repository link and your task:
 
-> Use ADAC from [ADAC repository link] for this task: [describe the task]. Read SETUP.md, the core and the applicable method guides directly from one fixed repository revision before planning. Do not copy ADAC into this project.
+> Use ADAC from [ADAC repository link] for this task: [describe the task]. Read SETUP.md, the core and the applicable method guides directly from one fixed repository revision before planning.
 
 The agent follows the **[reading guide](SETUP.md)**: it loads the actual documents, understands the requirements and checks whether ADAC fits. When it does, the orchestrator reads the detailed architecture and coordination guides before planning and gives workers the relevant instructions. A link alone does not mean its contents have been read.
 
-For continued use across sessions, ask the agent to add a short pinned repository reference to your existing project instructions. The method documents stay in the ADAC repository. For a one-off task, no persistent project change is needed.
+For continued use across sessions, ask the agent to add a short pinned repository reference to your existing project instructions. With this approach, the method documents stay in the ADAC repository. For a one-off task, no persistent project change is needed.
 
-You do not need to select files, run a command or install a skill. Direct reading needs repository access; an offline copy is an explicit alternative when requested. The [core](releases/2.3.0/core.md), [recommendations](releases/2.3.0/recommendations.md) and **[method in detail](method/README.md)** provide the rules and practical guidance. The standalone [three-file snapshot](releases/2.3.0/README.md) remains an offline reading option; its copy instructions are not the default repository-reading workflow.
+You do not need to select files, run a command or install a skill. Direct reading needs repository access. You can also copy the documents into your project for local access, offline use or customization; copying is optional. The [core](releases/2.3.0/core.md), [recommendations](releases/2.3.0/recommendations.md) and **[method in detail](method/README.md)** provide the rules and practical guidance. The standalone [three-file snapshot](releases/2.3.0/README.md) provides a compact local reading option.
 
 ## Foundations and guidance
 
