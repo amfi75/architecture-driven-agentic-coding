@@ -1,0 +1,36 @@
+# Optional responsibility map; names and layers are illustrative, not an execution order.
+# Derive tasks from requirements, interfaces and dependencies. No YAML runtime is required.
+system: rag-system
+layers:
+  - name: ingestion
+    owns:
+      - document intake
+      - source metadata
+    public_surfaces:
+      - submitted document
+  - name: indexing
+    owns:
+      - chunking
+      - embeddings
+      - index writes
+    public_surfaces:
+      - index record
+  - name: retrieval
+    owns:
+      - query planning
+      - ranking
+    public_surfaces:
+      - retrieval result
+  - name: generation
+    owns:
+      - answer prompts
+      - citation formatting
+    public_surfaces:
+      - grounded answer format
+  - name: evaluation
+    owns:
+      - answer checks
+      - dataset fixtures
+    public_surfaces:
+      - eval case
+      - eval report

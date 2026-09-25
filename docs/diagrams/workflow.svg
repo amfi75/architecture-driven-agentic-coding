@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1200" viewBox="0 0 1000 1200" role="img" aria-label="ADAC: from requirements through architecture to completion"><title>ADAC: from requirements through architecture to completion</title><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#36536b"/></marker></defs><rect width="100%" height="100%" fill="#f8fafc"/><g font-family="Arial, Helvetica, sans-serif" fill="#18344a">
+<text x="500" y="36" text-anchor="middle" font-size="26" font-weight="bold">Architecture-Driven Agentic Coding</text>
+<text x="500" y="65" text-anchor="middle" font-size="17" font-weight="normal">Requirements → architecture → coordinated work → integrated result</text>
+<rect x="390" y="85" width="220" height="45" rx="12" fill="#dcefe8" stroke="#6a879d" stroke-width="1.5"/>
+<text x="500.0" y="112" text-anchor="middle" font-size="18" font-weight="bold">START</text>
+<path d="M 500 130 V 153" fill="none" stroke="#36536b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="240" y="155" width="520" height="95" rx="12" fill="#ffffff" stroke="#6a879d" stroke-width="1.5"/>
+<text x="500.0" y="182" text-anchor="middle" font-size="18" font-weight="bold">1 · Understand requirements</text>
+<text x="500.0" y="207" text-anchor="middle" font-size="16" font-weight="normal">Outcome, quality, binding constraints and acceptance</text>
+<text x="500.0" y="230" text-anchor="middle" font-size="16" font-weight="normal">Clarify material ambiguity with the user</text>
+<path d="M 500 250 V 275" fill="none" stroke="#36536b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="290" y="277" width="420" height="72" rx="12" fill="#e4eef9" stroke="#6a879d" stroke-width="1.5"/>
+<text x="500.0" y="304" text-anchor="middle" font-size="18" font-weight="bold">Does modular decomposition help?</text>
+<text x="500.0" y="329" text-anchor="middle" font-size="16" font-weight="normal">Decide before assigning agents</text>
+<path d="M 710 313 H 782" fill="none" stroke="#36536b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="746" y="301" text-anchor="middle" font-size="15" font-weight="normal">No</text>
+<rect x="785" y="277" width="195" height="95" rx="12" fill="#edf1f4" stroke="#6a879d" stroke-width="1.5"/>
+<text x="882.5" y="304" text-anchor="middle" font-size="18" font-weight="bold">Ordinary work</text>
+<text x="882.5" y="329" text-anchor="middle" font-size="16" font-weight="normal">Use proportionate</text>
+<text x="882.5" y="352" text-anchor="middle" font-size="16" font-weight="normal">local practices</text>
+<path d="M 500 349 V 381" fill="none" stroke="#36536b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="525" y="371" text-anchor="start" font-size="15" font-weight="normal">Yes</text>
+<rect x="210" y="383" width="580" height="112" rx="12" fill="#ffffff" stroke="#6a879d" stroke-width="1.5"/>
+<text x="500.0" y="410" text-anchor="middle" font-size="18" font-weight="bold">2 · Derive architecture, interfaces and tasks</text>
+<text x="500.0" y="435" text-anchor="middle" font-size="16" font-weight="normal">Responsibilities, dependencies and hidden internals</text>
+<text x="500.0" y="458" text-anchor="middle" font-size="16" font-weight="normal">Provider/consumer behavior, errors and invariants</text>
+<text x="500.0" y="481" text-anchor="middle" font-size="16" font-weight="normal">Worker requirements, scope, readiness and acceptance</text>
+<path d="M 500 495 V 521" fill="none" stroke="#36536b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="210" y="523" width="580" height="94" rx="12" fill="#fff1d8" stroke="#6a879d" stroke-width="1.5"/>
+<text x="500.0" y="550" text-anchor="middle" font-size="18" font-weight="bold">Review the complete initial plan</text>
+<text x="500.0" y="575" text-anchor="middle" font-size="16" font-weight="normal">Independent review → repair gaps → user approval</text>
+<text x="500.0" y="598" text-anchor="middle" font-size="16" font-weight="normal">For substantial work; preserve the agreed requirements</text>
+<path d="M 500 617 V 645" fill="none" stroke="#36536b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="210" y="647" width="580" height="92" rx="12" fill="#e4eef9" stroke="#6a879d" stroke-width="1.5"/>
+<text x="500.0" y="674" text-anchor="middle" font-size="18" font-weight="bold">3 · Orchestrator coordinates implementation</text>
+<text x="500.0" y="699" text-anchor="middle" font-size="16" font-weight="normal">Leading agent: whole-system responsibility</text>
+<text x="500.0" y="722" text-anchor="middle" font-size="16" font-weight="normal">Handles change requests and may implement itself</text>
+<path d="M 500 739 V 763 H 190 V 786" fill="none" stroke="#36536b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 500 763 V 786" fill="none" stroke="#36536b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 500 763 H 810 V 786" fill="none" stroke="#36536b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="55" y="788" width="270" height="90" rx="12" fill="#ffffff" stroke="#6a879d" stroke-width="1.5"/>
+<text x="190.0" y="815" text-anchor="middle" font-size="18" font-weight="bold">Worker A</text>
+<text x="190.0" y="840" text-anchor="middle" font-size="16" font-weight="normal">Derived requirements</text>
+<text x="190.0" y="863" text-anchor="middle" font-size="16" font-weight="normal">Bounded assignment</text>
+<rect x="365" y="788" width="270" height="90" rx="12" fill="#ffffff" stroke="#6a879d" stroke-width="1.5"/>
+<text x="500.0" y="815" text-anchor="middle" font-size="18" font-weight="bold">Worker B</text>
+<text x="500.0" y="840" text-anchor="middle" font-size="16" font-weight="normal">Same shared contracts</text>
+<text x="500.0" y="863" text-anchor="middle" font-size="16" font-weight="normal">Bounded assignment</text>
+<rect x="675" y="788" width="270" height="90" rx="12" fill="#ffffff" stroke="#6a879d" stroke-width="1.5"/>
+<text x="810.0" y="815" text-anchor="middle" font-size="18" font-weight="bold">Owner contribution</text>
+<text x="810.0" y="840" text-anchor="middle" font-size="16" font-weight="normal">Integration / other work</text>
+<text x="810.0" y="863" text-anchor="middle" font-size="16" font-weight="normal">Within authorized scope</text>
+<path d="M 190 878 V 926 H 500 V 947" fill="none" stroke="#36536b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 810 878 V 926 H 500 M 500 878 V 926" fill="none" stroke="#36536b" stroke-width="2"/>
+<rect x="210" y="949" width="580" height="94" rx="12" fill="#ffffff" stroke="#6a879d" stroke-width="1.5"/>
+<text x="500.0" y="976" text-anchor="middle" font-size="18" font-weight="bold">4 · Integrate, verify and independently review</text>
+<text x="500.0" y="1001" text-anchor="middle" font-size="16" font-weight="normal">Correct defects and internal design problems; repeat</text>
+<text x="500.0" y="1024" text-anchor="middle" font-size="16" font-weight="normal">Change overall requirements only with user approval</text>
+<path d="M 500 1043 V 1074" fill="none" stroke="#36536b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="524" y="1064" text-anchor="start" font-size="15" font-weight="normal">All required criteria and final review pass</text>
+<rect x="275" y="1076" width="450" height="67" rx="12" fill="#dcefe8" stroke="#6a879d" stroke-width="1.5"/>
+<text x="500.0" y="1103" text-anchor="middle" font-size="18" font-weight="bold">END · Handoff the complete result</text>
+<text x="500.0" y="1128" text-anchor="middle" font-size="16" font-weight="normal">Architecture decisions, outcome and evidence</text>
+<text x="500" y="1175" text-anchor="middle" font-size="15" font-weight="normal">Parallel where independent; serial where needed. Agent roles, no executable controller.</text>
+</g></svg>

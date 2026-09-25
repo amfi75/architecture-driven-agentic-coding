@@ -1,0 +1,36 @@
+# Optional responsibility map; names and layers are illustrative, not an execution order.
+# Derive tasks from requirements, interfaces and dependencies. No YAML runtime is required.
+system: ai-agent-system
+layers:
+  - name: interfaces
+    owns:
+      - user inputs
+      - command entry points
+    public_surfaces:
+      - request format
+  - name: planning
+    owns:
+      - task decomposition
+      - policy selection
+    public_surfaces:
+      - plan schema
+  - name: tools
+    owns:
+      - tool adapters
+      - tool result normalization
+    public_surfaces:
+      - tool manifest
+      - tool result format
+  - name: memory
+    owns:
+      - stored context
+      - retrieval policy
+    public_surfaces:
+      - memory record
+  - name: evaluation
+    owns:
+      - traces
+      - checks
+      - review outputs
+    public_surfaces:
+      - evaluation report

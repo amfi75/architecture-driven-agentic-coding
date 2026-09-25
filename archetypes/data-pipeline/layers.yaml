@@ -1,0 +1,30 @@
+# Optional responsibility map; names and layers are illustrative, not an execution order.
+# Derive tasks from requirements, interfaces and dependencies. No YAML runtime is required.
+system: data-pipeline
+layers:
+  - name: sources
+    owns:
+      - source adapters
+      - input file conventions
+    public_surfaces:
+      - source records
+  - name: transforms
+    owns:
+      - parsing
+      - normalization
+      - validation
+    public_surfaces:
+      - normalized records
+  - name: sinks
+    owns:
+      - destination adapters
+      - output formats
+    public_surfaces:
+      - sink commands
+  - name: observability
+    owns:
+      - run metadata
+      - metrics
+      - error reporting
+    public_surfaces:
+      - log event format

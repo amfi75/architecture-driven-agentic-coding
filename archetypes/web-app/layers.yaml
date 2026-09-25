@@ -1,0 +1,33 @@
+# Optional responsibility map; names and layers are illustrative, not an execution order.
+# Derive tasks from requirements, interfaces and dependencies. No YAML runtime is required.
+system: web-app
+layers:
+  - name: presentation
+    owns:
+      - pages
+      - components
+      - client-side interaction
+    public_surfaces:
+      - route contracts
+      - component props
+  - name: application
+    owns:
+      - use cases
+      - workflow orchestration
+    public_surfaces:
+      - service functions
+      - command/query objects
+  - name: domain
+    owns:
+      - business rules
+      - domain models
+    public_surfaces:
+      - domain services
+      - domain events
+  - name: infrastructure
+    owns:
+      - persistence adapters
+      - external service clients
+    public_surfaces:
+      - repository interfaces
+      - adapter configuration

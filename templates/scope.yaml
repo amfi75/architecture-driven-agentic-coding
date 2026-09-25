@@ -1,0 +1,13 @@
+# Optional human/agent-readable scope record. No checker or YAML runtime required.
+# Historical tools are not required by current ADAC. The task package supplies behavior and acceptance.
+component: example-component
+allowed_paths:
+  - "src/example/**"
+  - "tests/example/**"
+  - "docs/example.md"
+public_surfaces:
+  - "contracts/example.md"
+notes:
+  - "Inspect context within access permissions; modify only the assignment."
+  - "Send needed interface or scope changes to the orchestrator."
+  - "The orchestrator may revise derived assignments within overall requirements."

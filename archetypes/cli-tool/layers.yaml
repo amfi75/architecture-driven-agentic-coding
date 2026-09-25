@@ -1,0 +1,31 @@
+# Optional responsibility map; names and layers are illustrative, not an execution order.
+# Derive tasks from requirements, interfaces and dependencies. No YAML runtime is required.
+system: cli-tool
+layers:
+  - name: cli
+    owns:
+      - commands
+      - flags
+      - terminal output
+    public_surfaces:
+      - command syntax
+      - exit codes
+  - name: application
+    owns:
+      - use cases
+      - workflow coordination
+    public_surfaces:
+      - command handlers
+  - name: core
+    owns:
+      - business logic
+      - validation
+    public_surfaces:
+      - core functions
+  - name: adapters
+    owns:
+      - filesystem
+      - network
+      - external tools
+    public_surfaces:
+      - adapter interfaces
