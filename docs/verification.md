@@ -1,6 +1,6 @@
 # Verification and practical experience — ADAC 2.3.0
 
-This is a private release candidate. Public publication and activation in global agent instructions are separate decisions. Private project implementations, data and associated verification records are not part of this distribution.
+This document records the verification scope for ADAC 2.3.0. Using this release does not automatically activate it in global agent instructions. Private project implementations, data and associated verification records are not part of this distribution.
 
 ## What has been checked
 

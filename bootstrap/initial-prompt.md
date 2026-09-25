@@ -1,8 +1,8 @@
 # A repository link and a task
 
-Give your coding agent this request, replacing the repository link and task:
+Give your coding agent this request, replacing the task description:
 
-> Use ADAC from [ADAC repository link] for this task: [describe the task]. Read SETUP.md, the core and the applicable method guides directly from one fixed repository revision before planning.
+> Use ADAC from https://github.com/amfi75/architecture-driven-agentic-coding for this task: [describe the task]. Read SETUP.md, the core and the applicable method guides directly from one fixed repository revision before planning.
 
 The [reading guide](../SETUP.md) tells the agent which documents to retrieve and read. It assesses suitability from the requirements, then reads the detailed method before architecture and task planning when ADAC is selected. Workers receive their task context and relevant instructions from the orchestrator.
 

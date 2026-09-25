@@ -32,7 +32,7 @@ The orchestrator is an agent role, not a software controller. It can implement a
 
 Give your coding agent the repository link and your task:
 
-> Use ADAC from [ADAC repository link] for this task: [describe the task]. Read SETUP.md, the core and the applicable method guides directly from one fixed repository revision before planning.
+> Use ADAC from https://github.com/amfi75/architecture-driven-agentic-coding for this task: [describe the task]. Read SETUP.md, the core and the applicable method guides directly from one fixed repository revision before planning.
 
 The agent follows the **[reading guide](SETUP.md)**: it loads the actual documents, understands the requirements and checks whether ADAC fits. When it does, the orchestrator reads the detailed architecture and coordination guides before planning and gives workers the relevant instructions. A link alone does not mean its contents have been read.
 
@@ -50,6 +50,6 @@ See [verification and experience](docs/verification.md) for the actual scope of 
 
 ## Version and publication
 
-Current package: **ADAC 2.3.0**, core 2.3.0, recommendations 1.2.0, prepared for private review. The 2.2 candidate is superseded; existing projects and global installations do not migrate automatically. See [migration and rollback](docs/versioning-and-migration.md).
+Current package: **ADAC 2.3.0**, core 2.3.0, recommendations 1.2.0. The 2.2 candidate is superseded; existing projects and global installations do not migrate automatically. See [migration and rollback](docs/versioning-and-migration.md).
 
 [MIT license](LICENSE) · [Provenance](NOTICE.md) · [Contributing](CONTRIBUTING.md) · [Optional maintainer checks](docs/maintaining.md)

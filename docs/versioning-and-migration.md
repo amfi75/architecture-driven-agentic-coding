@@ -27,7 +27,7 @@ A migration review should address:
 - model recommendations as advice, never permissions or a required router;
 - retained independent review and observable acceptance.
 
-Record the chosen revision and authorization, update only the intended references, and verify access to the pinned documents. Shared/global instruction changes require their own review and explicit authority. This candidate does not activate a global migration or change existing product pins.
+Record the chosen revision and authorization, update only the intended references, and verify access to the pinned documents. Shared/global instruction changes require their own review and explicit authority. This release does not activate a global migration or change existing product pins.
 
 ## Rollback
 
