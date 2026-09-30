@@ -1,6 +1,6 @@
 # Worker task package
 
-Optional record for [core 2.3.0](../releases/2.3.0/core.md). A concise message with the same contents also works. The orchestrator issues and revises this assignment; it is not a separate human approval gate.
+Optional record for [core 2.4.0-dev.1](../releases/2.4.0-dev.1/core.md). A concise message with the same contents also works. The orchestrator issues and revises this assignment; it is not a separate human approval gate.
 
 ## Goal and derived requirements
 

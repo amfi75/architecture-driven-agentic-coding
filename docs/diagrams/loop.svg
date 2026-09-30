@@ -51,5 +51,5 @@
 <text x="525.0" y="917" text-anchor="middle" font-size="16" font-weight="normal">Pause dependent work only. No unilateral scope or shared-contract changes.</text>
 <text x="525" y="982" text-anchor="middle" font-size="16" font-weight="normal">External login / physical action: targeted unblock, then resume the interrupted step.</text>
 <text x="525" y="1013" text-anchor="middle" font-size="16" font-weight="normal">Returns to 1 or 2 are decisions and instructions, not runtime-enforced transitions.</text>
-<text x="525" y="1044" text-anchor="middle" font-size="15" font-weight="normal">Numbers correspond to the main workflow. Core 2.3.0 defines the actual rules.</text>
+<text x="525" y="1044" text-anchor="middle" font-size="15" font-weight="normal">Numbers correspond to the main workflow. Candidate core 2.4.0-dev.1 defines the rules for this substantial-work flow.</text>
 </g></svg>

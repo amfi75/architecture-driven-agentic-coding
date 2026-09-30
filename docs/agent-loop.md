@@ -1,8 +1,10 @@
 # The delivery loop within architecture-driven work
 
-The loop supports the architecture-driven method. First understand requirements, decide whether modular decomposition fits and derive architecture, interfaces and assignments. For substantial work, independently review this complete plan and obtain the user's initial approval. Only then enter implementation.
+The diagrams show the substantial-work flow. Architecture-fitting incremental work uses the core's [compact change guidance](../releases/2.4.0-dev.1/core.md#changes-within-the-existing-architecture) and proportionate review; it does not automatically enter the full planning gates.
 
-The main [workflow diagram](diagrams/workflow.svg) shows the starting point and completion. The diagram below expands the return paths. It is a representation of the instructions in [core 2.3.0](../releases/2.3.0/core.md), not an executable controller.
+The loop supports the architecture-driven method. First understand requirements and the relevant system, decide whether modular decomposition fits and derive architecture, interfaces and assignments. For substantial work, independently review this complete plan and obtain the user's initial approval. Only then enter implementation.
+
+The main [workflow diagram](diagrams/workflow.svg) shows the starting point and completion. The diagram below expands the return paths. It is a representation of the instructions in [core 2.4.0-dev.1](../releases/2.4.0-dev.1/core.md), not an executable controller.
 
 ![Delivery and change-request return paths](diagrams/loop.svg)
 
@@ -10,6 +12,7 @@ The main [workflow diagram](diagrams/workflow.svg) shows the starting point and 
 
 | Observation | Recipient and next step | Human decision? |
 | --- | --- | --- |
+| Missing delta or preservation evidence; newly discovered impact | Orchestrator updates understanding, the change record and affected verification, correcting implementation where needed | No, if overall requirements are preserved |
 | Local implementation defect | Orchestrator/assigned worker repairs implementation and repeats affected checks | No |
 | Missing internal field or behavior; another component needs a change | Worker sends need, reasons, affected contracts/tasks, options and checks to the orchestrator | No, if overall requirements are preserved |
 | Worker assignment is insufficient | Orchestrator revises scope or allocation and coordinates dependent work | No, if overall requirements are preserved |
@@ -24,7 +27,7 @@ A worker pauses only dependent work while a request is unresolved. It never expa
 
 - Core §§1–2: requirements, suitability, architecture/interfaces/assignments, independent initial plan review and approval.
 - Core §§3–4: complete worker packages, common interface revision, requests to the orchestrator, updates to affected consumers and integration.
-- Core §5: implement, observe, verify, independently review, correct and repeat affected checks.
+- Core §5: implement, observe, update understanding as evidence changes, verify, obtain required independent review, correct and repeat affected checks.
 - Core “When the user must decide again”: overall-requirement changes, preserved authority and targeted external unblocks.
 - Core “Completion and learning”: criterion-level evidence, independent final verdict and handoff; missing evidence is not completion.
 

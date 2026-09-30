@@ -2,7 +2,7 @@
 
 Give your coding agent this request, replacing the task description:
 
-> Use ADAC from https://github.com/amfi75/architecture-driven-agentic-coding for this task: [describe the task]. Read SETUP.md, the core and the applicable method guides directly from one fixed repository revision before planning.
+> Use the ADAC 2.4 development candidate from https://github.com/amfi75/architecture-driven-agentic-coding/tree/adac-2.4-system-understanding for this task: [describe the task]. Resolve this branch to one fixed commit and read SETUP.md, the core and the applicable method guides from that commit before planning. Preserve any existing project pin unless I explicitly request migration.
 
 The [reading guide](../SETUP.md) tells the agent which documents to retrieve and read. It assesses suitability from the requirements, then reads the detailed method before architecture and task planning when ADAC is selected. Workers receive their task context and relevant instructions from the orchestrator.
 

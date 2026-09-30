@@ -2,11 +2,11 @@
 
 The recommended entry is a repository link and a task. Read the documents directly from that repository at one fixed revision. No local copy is needed; copying the documents is also supported for local access, offline use or customization. The filename SETUP.md is retained as the stable agent entry point; no installer, skill or runtime is required.
 
-The [core](releases/2.3.0/core.md) defines the method. The detailed guides explain its practical application. Reading a link means retrieving and reading the actual document content, not assuming the link itself supplies the instructions.
+The [core](releases/2.4.0-dev.1/core.md) defines the method. The detailed guides explain its practical application. Reading a link means retrieving and reading the actual document content, not assuming the link itself supplies the instructions.
 
 ## 1. Select an accessible, fixed revision
 
-Use the supplied repository and honor any existing project pin or explicitly requested revision. Otherwise resolve the current source to one exact commit for this task and state it briefly. Read every method document from that same revision; a moving branch or version label alone is not a complete document pin.
+This is the ADAC 2.4.0-dev.1 development branch, `adac-2.4-system-understanding`. For an explicitly requested candidate trial, resolve that branch rather than defaulting to `main`. Use the supplied repository and honor any existing project pin or explicitly requested revision. Otherwise resolve the current source to one exact commit for this task and state it briefly. Read every method document from that same revision; a moving branch or version label alone is not a complete document pin.
 
 Use revision-specific document links or the repository's read API with the agent's existing access. Verify that the retrieved content corresponds to the selected revision. Repository identity and stored references must not contain credentials. If access fails, report the specific access problem rather than claiming to have read the method. Do not invent content or silently substitute another version.
 
@@ -14,7 +14,7 @@ Existing project instructions, requirements and permissions remain authoritative
 
 ## 2. Read the rules and the detailed method
 
-First read [core 2.3.0](releases/2.3.0/core.md), understand the requested outcome and assess ADAC suitability. A local fix or inseparable task remains proportionate; the presence of an ADAC reference does not make every task an ADAC project.
+First read [core 2.4.0-dev.1](releases/2.4.0-dev.1/core.md), understand the requested outcome and assess ADAC suitability. A local fix or inseparable task remains proportionate; the presence of an ADAC reference does not make every task an ADAC project.
 
 When ADAC is selected, the orchestrator reads the following documents at the chosen revision **before architecture and task planning**:
 
@@ -26,7 +26,7 @@ When ADAC is selected, the orchestrator reads the following documents at the cho
 - [Change requests](method/change-request-workflow.md)
 - [Independent review](method/review-model.md)
 
-Use the [glossary](method/glossary.md) for terminology and consult [model/task recommendations](releases/2.3.0/recommendations.md) as adaptable advice. Use [existing-repository](bootstrap/existing-repository.md) or [new-repository](bootstrap/new-repository.md) planning guidance as applicable. Templates and archetypes are references to consult when useful, not files to install automatically.
+Use the [glossary](method/glossary.md) for terminology and consult [model/task recommendations](releases/2.4.0-dev.1/recommendations.md) as adaptable advice. Use [existing-repository](bootstrap/existing-repository.md) or [new-repository](bootstrap/new-repository.md) planning guidance as applicable. Templates and archetypes are references to consult when useful, not files to install automatically.
 
 Give each worker its derived requirements, architecture context, interface revision, scope, dependencies, acceptance and relevant method instructions. Do not assume sub-agents inherit the orchestrator's context or access. Supply the relevant text when needed so a worker need not independently fetch the whole repository. Workers request interface, neighboring-component and scope changes through the orchestrator.
 

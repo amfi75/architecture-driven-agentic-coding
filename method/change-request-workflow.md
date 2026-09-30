@@ -1,6 +1,6 @@
 # Change requests and autonomous decisions
 
-A change request is a focused message about a boundary problem. It need not be a ticket or form. It routes a worker's discovery to the orchestrator while preserving the [overall requirements](../releases/2.3.0/core.md).
+A change request is a focused message about a boundary problem. It need not be a ticket or form. It routes a worker's discovery to the orchestrator while preserving the [overall requirements](../releases/2.4.0-dev.1/core.md).
 
 ## When a worker sends a request
 

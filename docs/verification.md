@@ -1,8 +1,14 @@
-# Verification and practical experience — ADAC 2.3.0
+# Verification and practical experience — ADAC 2.4 candidate
 
-This document records the verification scope for ADAC 2.3.0. Using this release does not automatically activate it in global agent instructions. Private project implementations, data and associated verification records are not part of this distribution.
+This document distinguishes candidate 2.4.0-dev.1 checks from historical ADAC 2.3.0 evidence. Using this candidate does not automatically activate it in global agent instructions. Private project implementations, data and associated verification records are not part of this distribution.
 
-## What has been checked
+## Candidate verification
+
+The candidate is checked for method consistency, links, versions, private references and unchanged 2.3 release files, using the existing maintainer guard and its defect-detection test. Independent read-only review covers the requested semantics and authority boundaries. Diagram changes receive visual inspection.
+
+Text cases cover architecture-fitting regression risk, insufficient existing coverage, discoveries during delivery, internal architecture changes, protected requirement changes, missing delta or preservation evidence, recurring boundary pressure, resumed context and trivial local changes. These assess the written method; no new adoption trial, demonstration or benchmark is performed. They do not establish live effectiveness of 2.4.
+
+## Historical 2.3 verification
 
 The method restores requirements-driven architecture, explicit interfaces, bounded worker assignments and orchestrator coordination. Verification covers method/documentation consistency, version and link checks, generic private-reference checks, visual inspection of the diagrams and banner, and independent read-only review against the agreed requirements.
 

@@ -1,6 +1,6 @@
 # Architecture foundations
 
-ADAC applies established software architecture ideas to coordinated coding agents. It does not claim to invent modularity or prove that agents always produce better software. The [core](../releases/2.3.0/core.md) is self-contained; these sources explain the design rationale rather than add required reading or hidden rules.
+ADAC applies established software architecture ideas to coordinated coding agents. It does not claim to invent modularity or prove that agents always produce better software. The [core](../releases/2.4.0-dev.1/core.md) is self-contained; these sources explain the design rationale rather than add required reading or hidden rules.
 
 ## Information hiding and meaningful modules
 

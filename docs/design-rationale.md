@@ -12,6 +12,12 @@ Version 2.3 restores those concepts from the last pre-2.0 method and updates the
 
 Functional needs, quality goals and binding constraints determine the architecture. A suitability decision prevents ADAC becoming overhead for every small task. Initial architecture and interfaces are part of the complete substantial-work plan, independently reviewed before the user's initial approval. This avoids asking the user to approve a plan whose important design is still absent.
 
+## System understanding supports safe change
+
+For substantial change, reason from requirements to architecture. For incremental change, reason from intended delta to preserved behavior. System understanding supports both. The orchestrator maintains that understanding as evidence changes; existing project or harness records retain what later work needs. ADAC adds no memory implementation.
+
+A change fitting the architecture can still cause regressions. Explicit preservation and impact reasoning helps prevent a narrowly successful patch from silently changing other required behavior. Repeated boundary pressure warrants architectural reconsideration, not automatic refactoring, which can itself expand the regression surface.
+
 ## Ownership can span components
 
 A leading agent may implement an approved outcome across authorized internal components. A blanket ban on cross-component owner work and one-agent-per-layer assignments would obstruct integration. Architectural responsibilities still matter; workers remain bounded by explicit derived requirements, contracts, scope and acceptance.

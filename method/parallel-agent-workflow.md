@@ -1,6 +1,6 @@
 # Controlled parallel work
 
-Parallelism is an explicit means of accelerating implementation. Architecture provides the responsibilities and interfaces that make simultaneous contributions coherent. The [core](../releases/2.3.0/core.md) defines the authority rules.
+Parallelism is an explicit means of accelerating implementation. Architecture provides the responsibilities and interfaces that make simultaneous contributions coherent. The [core](../releases/2.4.0-dev.1/core.md) defines the authority rules.
 
 ## Readiness for fan-out
 

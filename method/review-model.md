@@ -1,6 +1,6 @@
 # Independent review and acceptance
 
-Review checks whether architecture and implementation deliver the agreed outcome. It is not a compliance score for paperwork. The [core](../releases/2.3.0/core.md) governs the gates.
+Review checks whether architecture and implementation deliver the agreed outcome. It is not a compliance score for paperwork. The [core](../releases/2.4.0-dev.1/core.md) governs the gates.
 
 ## Independence and inputs
 
@@ -14,10 +14,12 @@ Provide the requirements and exact approved revision/deltas, relevant architectu
 2. Do interfaces describe behavior, errors and invariants, with compatible assumptions across providers and consumers?
 3. Are private internals respected, dependencies controlled and changes within authority? Was a protected commitment silently reclassified?
 4. Do worker assignments cover derived requirements, scope, dependencies and acceptance? Who owns integration and cross-cutting needs?
-5. Does the complete behavior satisfy acceptance? Inspect actual outputs and relevant adversarial cases, not only test counts or worker claims.
+5. Does the complete behavior satisfy acceptance? Is the claimed impact plausible, including effects beyond the edited files? Does the evidence demonstrate both the intended delta and preservation of relevant affected behavior? Inspect actual outputs and relevant adversarial cases, not only test counts or worker claims.
 6. Were reuse and external dependencies handled proportionately? Are real limitations and missing evidence visible?
 7. Did internal change requests reach the orchestrator and all affected consumers receive the same contract revision?
 8. Are confirmed findings corrected and affected checks repeated? Are claims of completion or publication supported?
+
+Apply review proportionately; small incremental changes do not acquire the substantial-work review gates merely because this guidance applies. Existing project-specific review obligations still apply.
 
 A reviewer must not introduce personal preferences, speculative risks or future productization as new requirements. Findings need a criterion, concrete evidence, impact and remediation. Scope can be inspected from the diff; no scope checker or interpreter is required to use ADAC.
 

@@ -1,6 +1,6 @@
 # Architecture-Driven Agentic Coding
 
-ADAC starts with the desired software outcome. It turns requirements into components with clear responsibilities and explicit interfaces, then uses those boundaries to coordinate agents. The [core 2.3.0](../releases/2.3.0/core.md) contains the shared commitments; these pages expand them with optional working aids.
+ADAC starts with the desired software outcome. It turns requirements into components with clear responsibilities and explicit interfaces, then uses those boundaries to coordinate agents. The [core 2.4.0-dev.1](../releases/2.4.0-dev.1/core.md) contains the shared commitments; these pages expand them with optional working aids.
 
 ## Three goals
 

@@ -1,6 +1,6 @@
 # Components and public surfaces
 
-A public surface is an interface another component or external consumer may rely on. “Public” here describes a dependency boundary; it does not necessarily mean internet-facing or immutable. Use the [core's](../releases/2.3.0/core.md) distinction between overall requirements and derived decisions to determine change authority.
+A public surface is an interface another component or external consumer may rely on. “Public” here describes a dependency boundary; it does not necessarily mean internet-facing or immutable. Use the [core's](../releases/2.4.0-dev.1/core.md) distinction between overall requirements and derived decisions to determine change authority.
 
 ## Discover the actual interfaces
 

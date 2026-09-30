@@ -16,4 +16,4 @@
 - **Binding constraint:** an actual agreed obligation, such as offline use, compatibility, privacy or a specified technology. It is not silently changeable as an implementation detail.
 - **External unblock:** an action or access only the user can supply; it does not itself restart requirements planning.
 
-For the complete rules, use [core 2.3.0](../releases/2.3.0/core.md).
+For the complete rules, use [core 2.4.0-dev.1](../releases/2.4.0-dev.1/core.md).

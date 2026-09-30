@@ -14,6 +14,10 @@ Identify intentional interfaces, private internals and accidental coupling separ
 
 Record the affected architecture, interface semantics and known gaps. For example, if retrieval reads storage's private files directly, record the coupling and consider a declared storage interface. Do not silently rename modules or reorganize code during inspection.
 
+## Choose the proportionate next step
+
+If the change fits the existing architecture but has a meaningful regression surface, follow the [incremental-change guidance](../releases/2.4.0-dev.1/core.md#changes-within-the-existing-architecture) in the current task record. Do not derive a new architecture solely to satisfy this bootstrap. Substantial work still needs the reviewed plan and initial approval below; a trivial local change retains ordinary proportionate practices.
+
 ## Plan from the requirements
 
 Reuse suitable existing architecture. Explain any proposed changes and quality tradeoffs. Derive tasks with expected behavior, contracts/revisions, scope, dependencies and acceptance. Identify shared decisions to resolve before fan-out and explicitly assign integration and cross-cutting requirements to the orchestrator.
@@ -22,4 +26,4 @@ Distinguish binding constraints from revisable internal choices. Resolve materia
 
 ## Completion of preparation
 
-The plan lets a reviewer distinguish intentional interfaces, private details, accidental coupling, uncertainty and safe task boundaries. Each worker knows where to send interface or scope requests. After approval, the orchestrator can revise internal decisions and assignments while preserving overall requirements. See [operating model](../method/operating-model.md).
+For substantial work, the plan lets a reviewer distinguish intentional interfaces, private details, accidental coupling, uncertainty and safe task boundaries. Each worker knows where to send interface or scope requests. After approval, the orchestrator can revise internal decisions and assignments while preserving overall requirements. See [operating model](../method/operating-model.md).

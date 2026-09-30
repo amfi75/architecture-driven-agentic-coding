@@ -29,8 +29,8 @@ class PublicationGuard(unittest.TestCase):
             readme.write_text(original+"\n"+"http:"+"/"*2+"fixture"+"."+"home/private\n")
             self.assertTrue(any("private reference" in e for e in guard.check(dest)))
             readme.write_text(original)
-            core=dest/"releases/2.3.0/core.md"
-            core.write_text(core.read_text().replace("# ADAC core 2.3.0","# ADAC core 9.9.9",1))
+            core=dest/"releases"/guard.RELEASE/"core.md"
+            core.write_text(core.read_text().replace("# ADAC core "+guard.RELEASE,"# ADAC core 9.9.9",1))
             self.assertTrue(any("version mismatch" in e for e in guard.check(dest)))
 
 
