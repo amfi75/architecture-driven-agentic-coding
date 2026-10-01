@@ -1,55 +1,39 @@
 # Design rationale and contribution
 
-ADAC exists to make architecture useful during agentic implementation: understand requirements, identify meaningful responsibilities, define interfaces, derive work and coordinate it through integration. Its goals are maintainability and quality, faster implementation through controlled parallelism, and autonomous completion.
+ADAC makes architecture useful during agentic development: requirements lead to functional responsibilities, software boundaries and interfaces, then accountable work and integrated evidence. Its objectives are maintainable high-quality software, faster parallel implementation and autonomous completion.
 
-## Restore architecture without restoring unnecessary rigidity
+## Architecture guides work
 
-The early method included architecture discovery, component/interface records, bounded tasks, change requests and a coordinator delivery loop. During simplification, versions 2.0–2.2 reduced too much of this concrete guidance. The 2.2 candidate's emphasis on the loop obscured the architecture-driven decomposition that makes the method distinctive.
+Versions 2.0–2.2 removed too much concrete architectural guidance during simplification. Version 2.3 restored architecture discovery, interfaces, bounded assignments and coordinated changes without restoring mandatory layers or restrictions on authorized end-to-end ownership.
 
-Version 2.3 restores those concepts from the last pre-2.0 method and updates their authority rules. The historical snapshot is a reconstruction source, not a claim that the old rules were all correct. The three-file package remains self-contained; richer bootstrap, contracts, task records and archetypes are optional and accessible.
+Functional architecture explains needed capabilities and relationships. Software architecture allocates them while addressing quality, constraints and existing dependencies. The mapping is many-to-many. Cohesion, information hiding and limited coupling help localize change and create independence that can be exploited for parallel work. Useful abstraction can justify additional design effort; speculative generality does not follow from modularity alone.
 
-## Requirements precede architecture
+## Continuity needs conventions
 
-Functional needs, quality goals and binding constraints determine the architecture. A suitability decision prevents ADAC becoming overhead for every small task. Initial architecture and interfaces are part of the complete substantial-work plan, independently reviewed before the user's initial approval. This avoids asking the user to approve a plan whose important design is still absent.
+A durable architectural account lets agents inspect, share and recover decisions. Project `AGENTS.md` identifies the method revision and authoritative architecture/delivery records. Existing equivalent documents are reused; otherwise `ARCHITECTURE.md` and `DELIVERY.md` provide predictable locations. The functional view, software architecture and their mapping belong together, with links to detailed contracts instead of duplicate accounts.
 
-## System understanding supports safe change
+This standardizes working conventions while preserving judgment over software design. The orchestrator keeps records consistent with requirements and implementation during delivery; review tests that consistency. Recovery after compaction includes current authorized work, not merely architectural prose. Explicit reading instructions avoid assuming every harness discovers the same files automatically.
 
-For substantial change, reason from requirements to architecture. For incremental change, reason from intended delta to preserved behavior. System understanding supports both. The orchestrator maintains that understanding as evidence changes; existing project or harness records retain what later work needs. ADAC adds no memory implementation.
+## Separate design ownership from bounded execution
 
-A change fitting the architecture can still cause regressions. Explicit preservation and impact reasoning helps prevent a narrowly successful patch from silently changing other required behavior. Repeated boundary pressure warrants architectural reconsideration, not automatic refactoring, which can itself expand the regression surface.
+A component owner may need substantial domain reasoning, original research and alternative evaluation. A worker can execute a well-defined implementation task with lighter capability. The owner evaluates and integrates delegated work and remains accountable. Workers return unresolved design questions to their owner; cross-component decisions reach the orchestrator.
 
-## Ownership can span components
+This distinction supports efficient capability allocation without requiring extra agents or a mandatory model hierarchy. The orchestrator can own components and owners can implement directly. Capability recommendations stay descriptive; model strength never grants scope or permissions.
 
-A leading agent may implement an approved outcome across authorized internal components. A blanket ban on cross-component owner work and one-agent-per-layer assignments would obstruct integration. Architectural responsibilities still matter; workers remain bounded by explicit derived requirements, contracts, scope and acceptance.
+## Iteration preserves the whole result
 
-## Internal changes belong with the orchestrator
+New development establishes architecture; improvements reuse suitable decisions. Delta / Preserve / Impact / Evidence makes regression obligations explicit even when a change fits existing boundaries. Discoveries update system understanding and affected evidence; recurring broad impact prompts architectural reasoning, not automatic refactoring.
 
-The orchestrator is the accountable agent role, not extra controller software. Workers can ask for interface changes, neighboring-component work or a revised assignment. The orchestrator evaluates alternatives, updates common contracts and tasks, and coordinates integration autonomously.
+Initial substantial work receives independent plan review and user approval. Afterward internal investigation, design refinement and correction proceed autonomously. Protected requirements, compatibility, privacy, security and acceptance remain subject to explicit user decisions. Component checks and interface-correct scaffolds cannot substitute for intended-use evidence of the complete result.
 
-A design decision does not become an immutable user requirement simply because it appeared in a plan. The user decides again when overall requirements or binding constraints must change. Explicit compatibility, privacy, security or technology commitments remain protected. This distinction preserves autonomy without allowing agents to redefine success.
+## Lightweight does not mean discretionary
 
-## Capabilities do not grant permissions
+The complete core states the requirements. Templates give new records a consistent structure; triggered guides explain application; capability advice helps staffing. These files reduce repeated invention without making every agent preload the entire repository. Version discovery and explicit migration preserve consistency across sessions and concurrent agents.
 
-Model recommendations describe useful capabilities for orchestration, implementation and independent review. A stronger model does not expand a worker's scope or turn a reviewer into an implementer. Model names, when included, must be dated examples. The method does not require a router, Python interpreter, model assignment service or particular provider.
-
-Text instructions are portable, transparent, easy to copy, version and inspect, and usable with existing project practices. These are practical advantages; they are not an enforcement guarantee. The host must provide the execution and review capabilities actually used.
-
-## Review remains meaningful
-
-Autonomy includes testing, observation, integration, independent review and remediation. Neither internal PASS reports nor theoretical citations establish better engineering outcomes by themselves. Acceptance must refer to the agreed result and actual evidence. Private project results are not public release evidence. Prior experiments do not certify the corrected method across all environments.
-
-## Compact instructions with explicit design responsibility
-
-Dev.2 keeps the complete commitments in a structured natural-language core. Each responsibility and return path has one primary definition; the method index routes readers to explanations when relevant. This reduces repeated context without introducing a DSL or executable controller. Compactness is checked across both first reading and complex-task reading, while review checks retained semantics. Word counts do not prove model reliability.
-
-Functional understanding informs software architecture alongside quality and constraints. Complex component owners receive purpose and design discretion, investigate consequential unknowns and provide evidence of intended use. These are explicit worker responsibilities, not a mandatory additional agent hierarchy. The orchestrator retains boundaries and integrated acceptance.
+The method needs no controller, installer, interpreter or particular provider. Project records are persistent text, not an ADAC memory runtime. These properties support portability and inspection, but do not enforce agent compliance. Checks and internal PASS reports do not establish improved engineering outcomes by themselves.
 
 ## Human and AI contribution
 
-The maintainer defined and applied the method in practice, reports about six months of successful use, and challenged the loss of architecture-centered decomposition. He specified the restored priorities: requirements first, controlled fan-out, explicit interfaces, an agent orchestrator, derived worker requirements, internal change requests and autonomy within overall requirements. He also required advisory model guidance, clear speed benefits, private review before publication and no new demo work for this repair.
+The maintainer defined and applied ADAC, reports roughly six months of successful use, and identified the loss of architecture-centered decomposition. He specified requirements-first work, quality/modularity, parallel implementation, autonomy, clear interfaces, meaningful review and advisory model guidance. He requested research grounding and challenged shallow component implementations, loss of iterative continuity, ambiguous owner/worker roles and excessive discretion over working conventions.
 
-The maintainer also identified inadequate design depth despite superficially fulfilled feature requirements, requested research grounding, and required compaction without losing functionality. Dev.2 applies those priorities to bounded investigation, design ownership and validation.
-
-AI assisted repository/history inspection, research, drafting, diagrams, consistency checks and independent review. The correction is an AI-assisted implementation of those human decisions; it does not justify attributing every line of implementation or every test execution to the maintainer. The agent's earlier simplification went too far, and the maintainer identified the problem.
-
-The [foundations](architecture-foundations.md) distinguish established theory from ADAC's agent-specific application. [Verification](verification.md) distinguishes practical experience, historical experiments and the checks performed for this correction.
+AI assisted inspection, research, drafting, diagrams, checks and independent review. Dev.3 implements the subsequent human-directed clarification of records, roles, migration and public explanation. This does not attribute every implementation line or check to the maintainer. [Foundations](architecture-foundations.md) distinguish established theory from ADAC's application; [verification](verification.md) distinguishes practitioner experience from actual candidate checks. No private project example or new performance benchmark is part of this revision.

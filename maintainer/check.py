@@ -4,8 +4,8 @@ import re
 from pathlib import Path
 from urllib.parse import unquote
 
-RELEASE = "2.4.0-dev.2"
-RECOMMENDATIONS = "1.3.0"
+RELEASE = "2.4.0-dev.3"
+RECOMMENDATIONS = "1.4.0"
 # Generic patterns, not an inventory of anyone's private infrastructure.
 PRIVATE = re.compile(r"(?:/home/|/Users/)[A-Za-z][^\s\"')]*|(?:https?://|ssh://)[^\s/]*\.home\b|\b(?:10\.\d+\.\d+\.\d+|192\.168\.\d+\.\d+|172\.(?:1[6-9]|2\d|3[01])\.\d+\.\d+)\b")
 SECRET = re.compile(r"-----BEGIN (?:[A-Z]+ )?PRIVATE KEY-----|\b(?:ghp|github_pat)_[A-Za-z0-9_]{20,}\b|\bsk-[A-Za-z0-9]{32,}\b")

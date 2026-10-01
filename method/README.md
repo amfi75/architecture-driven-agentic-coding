@@ -1,16 +1,16 @@
 # Method guides
 
-The [core](../releases/2.4.0-dev.2/core.md) contains all shared commitments. These guides explain application; read the relevant row before the affected decision, at the same pinned revision. Combine readings when several triggers apply; do not preload every guide for every task.
+The [core](../releases/2.4.0-dev.3/core.md) contains all shared requirements. These guides explain application. Read the matching guide before the affected activity, at the project's exact method revision; do not preload everything.
 
-| Work to undertake | Read |
+| Activity | Explanation |
 | --- | --- |
-| First use or uncertainty about suitability | [Concept](concept.md) |
-| Architecture or component/interface design | [Components and public surfaces](public-surfaces.md) |
-| Consequential design uncertainty, component investigation or delivery planning | [Operating model](operating-model.md) |
-| Delegating work or arranging parallel execution | [Controlled parallel work](parallel-agent-workflow.md) |
-| Resolving an interface, neighboring-component or assignment change | [Change requests](change-request-workflow.md) |
+| First use or uncertain suitability | [Concept](concept.md) |
+| Functional/software architecture or interface design | [Components and public surfaces](public-surfaces.md) |
+| Consequential investigation or delivery planning | [Design depth and delivery](operating-model.md) |
+| Owner/worker assignment or parallel work | [Controlled parallel work](parallel-agent-workflow.md) |
+| Interface, neighboring-component or assignment changes | [Change requests](change-request-workflow.md) |
 | Independent plan or result review | [Review](review-model.md) |
 
-Use the [glossary](glossary.md) for unfamiliar terms. [Capability recommendations](../releases/2.4.0-dev.2/recommendations.md), [bootstrap](../bootstrap/README.md) and [templates](../templates/task-package.md) are optional aids. Give workers only relevant instructions and sufficient project context.
+Use the [glossary](glossary.md) for unfamiliar terms. Consult [capability recommendations](../releases/2.4.0-dev.3/recommendations.md) when staffing or revising assignments. [Setup](../SETUP.md) establishes the entry point and records. When creating records, use the [architecture](../templates/architecture.md), [delivery](../templates/delivery.md), [assignment](../templates/task-package.md), [interface](../templates/contract.md) and [review](../templates/review-report.md) formats; retain equivalent existing records. The core specifies their content, so templates add no hidden obligations.
 
-[Architecture foundations](../docs/architecture-foundations.md) explain the research and its limits; the [loop guide](../docs/agent-loop.md) illustrates transitions. Neither is prerequisite reading. The [standalone snapshot](../releases/2.4.0-dev.2/README.md) is self-contained without these guides.
+[Bootstrap](../bootstrap/README.md) explains getting work started. [Foundations](../docs/architecture-foundations.md) and [rationale](../docs/design-rationale.md) are background, not routine preload. The [loop guide](../docs/agent-loop.md) illustrates corrections. The [standalone core](../releases/2.4.0-dev.3/README.md) remains sufficient without these supporting files.

@@ -1,25 +1,21 @@
 # Design depth and delivery
 
-Apply the [core](../releases/2.4.0-dev.2/core.md) with records proportionate to the decision.
+Apply the [core](../releases/2.4.0-dev.3/core.md); record consequential understanding during work rather than only at handoff.
 
-## Build relevant understanding
+## Understand enough to act
 
-Use code, tests, contracts, history, configuration and observed behavior to trace the affected flow. Separate verified facts from assumptions. For incremental work, identify the intended change and the behavior that must survive; use existing records for the core's Delta / Preserve / Impact / Evidence reasoning.
+Start from the project entry point and relevant architecture/delivery sections. Use code, tests, contracts, history, configuration and observed behavior to bound plausible impact. Distinguish facts from assumptions. For an improvement, identify Delta / Preserve / Impact / Evidence, including characterization where relevant coverage is insufficient. Suitable existing architecture does not need redesign to satisfy a process.
 
-## Investigate a decision
+## Investigate a consequential decision
 
-A useful investigation states:
+A useful investigation identifies the decision, required behavior/quality, consequences of choosing poorly, existing solutions, alternatives, discriminating evidence, rationale and remaining verification. Research externally when needed; focused experiments answer specific authorized questions. Stop when a defensible choice is supported and remaining uncertainty has an evidence path.
 
-- decision and consequence of choosing poorly;
-- required behavior, quality and constraints;
-- existing implementation, reusable solutions and viable alternatives;
-- evidence distinguishing the alternatives;
-- selected approach, tradeoffs and remaining verification.
+For example, a context-selection design must fit intended conversation behavior and resource limits; merely exposing a storage API is insufficient. Research may be substantial where the problem warrants it, but collecting material without a decision criterion is not progress.
 
-For example, a context-selection design must serve the agreed conversation behavior and resource limits. A storage API alone cannot establish that fit. Determine what evidence would discriminate approaches before collecting more material. Consult relevant primary documentation or research when local knowledge is insufficient; experiment only to answer a consequential unresolved question within authority.
+The orchestrator can investigate before selecting components. Component owners then investigate and design within assigned boundaries. If suitable capability is unavailable, retain the work at the orchestrator or report the gap; do not treat uncertainty as resolved or lower acceptance. Workers receive sufficiently established designs and return unresolved design questions to their owner.
 
-The orchestrator may assign this investigation before deciding component boundaries. Once boundaries exist, delegate detailed design explicitly and retain system-level tradeoffs. If no suitable specialist is available, the orchestrator retains the work or reports missing capability rather than treating uncertainty as resolved.
+## Iterate against the whole result
 
-## Keep design connected to delivery
+Integrate contributions and exercise representative intended-use scenarios. New dependencies or invariants update understanding, impact, preservation and evidence. Unsuitable design returns to affected architecture; recurring preservation failures or broad impact warrant reconsideration, not automatic refactoring. Only required changes to protected commitments reopen the user decision.
 
-Carry rationale and acceptance into assignments. Integrate coherent contributions and exercise representative intended-use scenarios. Findings may refine the design or expand relevant system understanding. Preserve the resulting decisions in existing project records; the core governs approvals, correction and completion.
+Update authoritative records and communicate affected decisions before dependent work resumes. Distinguish approved requirements, proposed deltas and implementation progress. On context loss, reload relevant records and reconcile discrepancies before continuing; a conversation summary is not the architectural source of truth.

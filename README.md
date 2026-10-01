@@ -2,60 +2,73 @@
 
 # Architecture-Driven Agentic Coding
 
-**Turn understood requirements into modular software, coordinated parallel work and an autonomously completed result.**
+**Use architecture to build better software, develop independent parts in parallel, and complete agreed work autonomously.**
 
-ADAC is a lightweight, text-only method for coding agents. A leading agent acts as orchestrator: it understands required behavior and the existing system, derives architecture and interfaces, assigns bounded ownership, and integrates the result. Complex component owners investigate and design their contribution as well as implement it.
+ADAC is a lightweight, text-only method for coding agents. It connects requirements to functional responsibilities, software components and explicit interfaces, then assigns accountable owners and coordinates delivery. The architecture remains a working reference as the software evolves.
+
+**Version:** this branch contains development candidate **2.4.0-dev.3**, with capability recommendations 1.4.0. [Main](https://github.com/amfi75/architecture-driven-agentic-coding/tree/main) identifies the latest stable release, currently **2.3.0**. Existing projects retain their recorded revision; discovering a newer version does not activate it.
 
 ## Why ADAC?
 
-1. **Build maintainable, modular software with high quality.** Clear responsibilities and explicit contracts help contain change, avoid unintended coupling and make component behavior and integration reviewable.
-2. **Accelerate implementation through controlled parallel work.** Agents develop suitably independent contributions at the same time. The orchestrator coordinates dependencies, interface revisions and integration so parallel progress serves a coherent system.
-3. **Finish the agreed result as autonomously as possible.** Agents implement, verify and correct continuously. The orchestrator resolves internal issues and revises the architecture or tasks as needed; the user decides again when overall requirements or binding constraints must change.
+1. **Maintainable, adaptable software of high quality.** Cohesive responsibilities, hidden implementation decisions and meaningful interfaces limit coupling and localize change. Appropriate abstractions support reuse without speculative generality.
+2. **Faster implementation through controlled parallel work.** Architecture creates sufficiently independent components or groups. Owners develop them concurrently once shared decisions and contracts are ready; the orchestrator coordinates integration.
+3. **Autonomous completion of the agreed outcome.** Agents research, implement, evaluate and correct. Internal design changes remain autonomous; changes to agreed requirements or protected commitments return to the user.
 
-The method is readable and versionable, with no required controller, Python runtime, executable installer, provider or agent harness. Model-choice guidance stays advisory. The maintainer reports successful practical use over approximately six months, including faster implementation than single-agent work; this is practitioner experience, not a quantified comparative study.
+The method requires no controller, interpreter, installer, provider or particular harness. Its conventions are readable, versionable project text. Agents must follow them; the text does not enforce compliance. The maintainer reports about six months of successful use, including faster implementation than single-agent work; this is practitioner experience, not a quantified comparative study.
 
 ## When does it help?
 
-Use ADAC for work that supports meaningful modular responsibilities and defined interfaces: for example communication adapters, application logic, storage and user interaction. These are examples, not required layers or separate services. Architecture should fit the requirements, and work allocation should fit the architecture.
+Use ADAC when meaningful responsibilities and interfaces can support coordinated development—for example, communication, application behavior, storage and user interaction. These are examples, not mandatory layers or services. A modular monolith can qualify. Small local fixes and inseparable tasks usually need ordinary proportionate practices.
 
-A local bug fix, typo or inseparable one-off task usually does not justify this coordination. More files or available agents alone are not reasons to use it. A shared-interface decision may need serial coordination before independent implementation can proceed.
+For new software, understand requirements before establishing architecture. For an improvement, recover the relevant system understanding, identify the intended change and behavior to preserve, and retain suitable architecture. A change can fit existing boundaries while still having substantial regression risk. Both use the same correction loop; an improvement does not automatically restart architectural planning or user approval.
 
-Functional understanding describes the capabilities and behavior needed; software architecture also accounts for quality, constraints and existing dependencies. Functions need not become separate components. Investigate consequential uncertainty before committing dependent work, and validate the integrated behavior against intended use.
+## How it works
 
-For substantial change, reason from requirements to architecture. For incremental change, reason from intended delta to preserved behavior. The orchestrator maintains change-relevant system understanding throughout both; see [changes within the existing architecture](releases/2.4.0-dev.2/core.md#changes-within-the-existing-architecture).
+![ADAC workflow: understand, design, coordinate, deliver and verify](docs/diagrams/workflow.svg)
 
-## From requirements to a complete result
+**Requirements → functional architecture → software architecture and interfaces → accountable work → integrated evidence.** Functional and software views are connected, not a one-function-per-component rule. Quality and constraints also shape software boundaries.
 
-The diagram shows substantial architecture-driven work. Architecture-fitting incremental changes follow the compact guidance above with proportionate review.
+| Role | Responsibility |
+| --- | --- |
+| Orchestrator | System understanding, architecture, cross-component decisions, coordination and the complete result. |
+| Component owner | Research, design, delivery and integration accountability for a component or coherent group. |
+| Worker | A bounded implementation task against established requirements and design; unresolved design questions return to its owner. |
+| Independent reviewer | Read-only challenge of the plan and evidence against the agreement. |
 
-![ADAC: requirements, architecture, orchestrator, parallel work and integration](docs/diagrams/workflow.svg)
+An owner can implement directly; the orchestrator can also own components. Roles do not require separate agents. Demanding research and design need suitable reasoning capability; well-defined implementation can use lighter models. [Capability advice](releases/2.4.0-dev.3/recommendations.md) explains this division without prescribing a router or granting permissions.
 
-Text equivalent: **START → requirements and system understanding → suitability → architecture/interfaces/tasks → independent plan review and initial user approval → orchestrator-led implementation → integration, verification and independent review → END.** Work can be parallel or serial according to dependencies. Failed checks trigger correction; internal design issues return to the orchestrator. Needed changes to overall requirements return to the user. The [loop and change-request guide](docs/agent-loop.md) shows these return paths.
+Implementation problems return to implementation; owner-level questions return to the owner; shared-interface or architectural problems return to the orchestrator. Necessary changes to protected commitments return to the user. The [loop guide](docs/agent-loop.md) shows those paths and the initial/final review gates.
 
-The orchestrator is an agent role, not a software controller. It can implement as well as coordinate. Workers request interface or scope changes from it; they do not silently edit neighboring modules. Independent reviewers remain read-only.
+## Start with your agent
 
-## Use ADAC with your agent
+Give the agent this request:
 
-Give your coding agent the repository link and your task:
+> Use ADAC from https://github.com/amfi75/architecture-driven-agentic-coding for this task: [describe the task]. Honor the project's existing ADAC pin; otherwise use the latest stable release identified on main. Resolve it to one exact commit and read its SETUP.md and core. Assess suitability and, when ADAC applies, establish the project records and follow the method for the complete task.
 
-> Use the ADAC 2.4 development candidate from https://github.com/amfi75/architecture-driven-agentic-coding/tree/adac-2.4-system-understanding for this task: [describe the task]. Resolve this branch to one fixed commit and read SETUP.md, the core and the applicable method guides from that commit before planning. Preserve any existing project pin unless I explicitly request migration.
+To try this branch, explicitly add: **“Use development candidate 2.4.0-dev.3 from branch `adac-2.4-system-understanding`; if the project is pinned, first propose its migration.”** Candidate selection does not silently override an existing project pin.
 
-The agent follows the **[reading guide](SETUP.md)**: it loads the actual documents, understands the requirements and checks whether ADAC fits. When it does, the orchestrator uses the method index to read relevant guides before affected decisions and gives workers the relevant instructions. A link alone does not mean its contents have been read.
+The agent follows [setup](SETUP.md). You do not need to select templates, run a command or install a skill. The method can be read directly from the repository; copying it remains useful for offline use or customization.
 
-For continued use across sessions, ask the agent to add a short pinned repository reference to your existing project instructions. With this approach, the method documents stay in the ADAC repository. For a one-off task, no persistent project change is needed.
+When applying this candidate, the agent establishes these project records, reusing existing equivalents:
 
-You do not need to select files, run a command or install a skill. Direct reading needs repository access. You can also copy the documents into your project for local access, offline use or customization; copying is optional. The [core](releases/2.4.0-dev.2/core.md), [recommendations](releases/2.4.0-dev.2/recommendations.md) and **[method in detail](method/README.md)** provide the rules and practical guidance. The standalone [three-file snapshot](releases/2.4.0-dev.2/README.md) provides a compact local reading option.
+| Record | Purpose |
+| --- | --- |
+| `AGENTS.md` | Entry point with exact ADAC revision and authoritative record locations. |
+| `ARCHITECTURE.md` | Functional and software architecture, their mapping, interfaces and rationale. |
+| `DELIVERY.md` | Agreed requirements and approval history, clearly separated from evolving assignments, progress and evidence. |
 
-## Foundations and guidance
+These records describe your project; they are not copies of ADAC. They let agents resume relevant work after context loss and help detect architectural drift. Owners update them during delivery. Success means the complete agreed result works in its intended use, relevant existing behavior remains intact, and the records agree with the verified software.
 
-ADAC applies established principles of modular design, information hiding, interface contracts and architecture-centered iterative development to coding agents. Read the [architecture foundations](docs/architecture-foundations.md) for sources, the specific ADAC interpretation and its limits. The [design rationale](docs/design-rationale.md) explains choices and human/AI contribution.
+## Updates and further reading
 
-The [model-selection recommendations](releases/2.4.0-dev.2/recommendations.md) cover orchestration, component design/research, implementation and review. They require no automatic router and do not grant permissions.
+**Checking for a newer release and migrating are different actions.** An upgrade compares versions and local adaptations, reconciles roles and records, preserves approved commitments, coordinates active agents and only then switches the pin. See [migration and rollback](docs/versioning-and-migration.md).
 
-See [verification and experience](docs/verification.md) for the actual scope of evidence. This distribution contains the method, its guidance and repository support files; private project implementations and their evidence are excluded.
+- [Core](releases/2.4.0-dev.3/core.md): complete shared requirements.
+- [Concept](method/concept.md) and [method index](method/README.md): explanation and task-triggered guidance.
+- [Candidate notes](releases/2.4.0-dev.3/README.md): changes and migration from earlier versions.
+- [Architecture foundations](docs/architecture-foundations.md) and [design rationale](docs/design-rationale.md): established theory, ADAC's application and human/AI contribution.
+- [Verification and experience](docs/verification.md): what was actually checked and what was not.
 
-## Version and publication
+Previous [dev.2](releases/2.4.0-dev.2/README.md), [dev.1](releases/2.4.0-dev.1/README.md) and [2.3.0](releases/2.3.0/README.md) snapshots remain unchanged. Private project implementations and their evidence are excluded.
 
-This branch exercises **ADAC 2.4.0-dev.2**, with candidate core 2.4.0-dev.2 and recommendations 1.3.0. Dev.2 adds explicit design/research ownership and intended-use validation while compacting the core and guide reading. The previous [dev.1 snapshot](releases/2.4.0-dev.1/README.md) is preserved. The released [ADAC 2.3.0 snapshot](releases/2.3.0/README.md) remains immutable; `main` remains the stable entry point. Existing projects and global installations do not migrate automatically. See [migration and rollback](docs/versioning-and-migration.md).
-
-[MIT license](LICENSE) · [Provenance](NOTICE.md) · [Contributing](CONTRIBUTING.md) · [Optional maintainer checks](docs/maintaining.md)
+[MIT license](LICENSE) · [Provenance](NOTICE.md) · [Contributing](CONTRIBUTING.md) · [Maintainer checks](docs/maintaining.md)

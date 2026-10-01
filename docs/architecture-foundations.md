@@ -1,6 +1,6 @@
 # Architecture foundations
 
-ADAC applies established software architecture ideas to coordinated coding agents. It does not claim to invent modularity or prove that agents always produce better software. The [core](../releases/2.4.0-dev.2/core.md) is self-contained; these sources explain the design rationale rather than add required reading or hidden rules.
+ADAC applies established software architecture ideas to coordinated coding agents. It does not claim to invent modularity or prove that agents always produce better software. The [core](../releases/2.4.0-dev.3/core.md) is self-contained; these sources explain the design rationale rather than add required reading or hidden rules.
 
 ## Information hiding and meaningful modules
 
@@ -30,11 +30,11 @@ A Markdown interface description is not a formal proof or automatic runtime enfo
 
 Philippe Kruchten's 1995 “4+1” model separates architectural concerns and uses scenarios to relate and validate the views. ADAC takes the practical lesson that a component map alone is insufficient: task allocation, dependencies, runtime interaction and user scenarios must agree. [Kruchten, The 4+1 View Model of Architecture](https://arxiv.org/pdf/2006.04975) (1995 paper, later author upload).
 
-ADAC does not mandate five diagrams. It uses only the views needed for the task, and assigns integration and cross-cutting requirements explicitly to the orchestrator.
+ADAC does not mandate five diagrams. Its architectural record keeps functional and software views connected, adds detail proportionate to the task, and assigns integration and cross-cutting requirements explicitly to the orchestrator.
 
 ## Communication follows architecture
 
-Melvin Conway's 1968 essay connects system structure with the communication structure of the organizations designing it. ADAC applies this as an analogy: worker responsibilities, declared interfaces and a direct change-request channel should support the intended architecture. The orchestrator maintains a whole-system view and coordinates shared changes. [Conway, How Do Committees Invent?](https://melconway.com/Home/Committees_Paper.html).
+Melvin Conway's 1968 essay connects system structure with the communication structure of the organizations designing it. ADAC applies this as an analogy: component ownership, bounded worker assignments, declared interfaces and explicit change-request routes should support the intended architecture. The orchestrator maintains a whole-system view and coordinates shared changes. [Conway, How Do Committees Invent?](https://melconway.com/Home/Committees_Paper.html).
 
 This is a design rationale for agent coordination, not empirical proof that Conway's observations transfer unchanged to AI agents. More agents alone do not establish useful parallelism.
 

@@ -1,6 +1,6 @@
 # Interface contract
 
-Optional record; use enough detail for compatible independent work.
+Use this format when creating an interface record; link it from the authoritative architecture document. Retain equivalent existing contracts. Use enough detail for compatible independent work.
 
 ## Identity and purpose
 
@@ -32,4 +32,4 @@ Optional record; use enough detail for compatible independent work.
 - Affected providers/consumers and current common revision:
 - Integration checks and actual results:
 
-Workers request changes through the orchestrator. It can revise derived internal contracts while preserving overall requirements; binding commitments require the corresponding user decision.
+Workers raise issues with their component owner; shared-interface changes go to the orchestrator. It can revise derived internal contracts while preserving overall requirements; binding commitments require the corresponding user decision. Update affected records and inform owners and workers before dependent work resumes.

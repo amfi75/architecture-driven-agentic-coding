@@ -1,6 +1,21 @@
 # Verification and practical experience — ADAC 2.4 candidate
 
-This document distinguishes candidate 2.4.0-dev.2 checks from previous dev.1 and stable ADAC 2.3.0 evidence. Using this candidate does not automatically activate it in global agent instructions. Private project implementations, data and associated verification records are not part of this distribution.
+This document distinguishes candidate 2.4.0-dev.3 checks from earlier candidates and stable ADAC 2.3.0 evidence. Using this candidate does not automatically activate it in global agent instructions. Private project implementations, data and associated verification records are not part of this distribution.
+
+## Dev.3 verification
+
+Dev.3 uses the existing maintainer checker and defect-detection unittest for links/anchors, versions, manifest contents and generic private-reference patterns. The unchanged 2.3.0, dev.1 and dev.2 directories are compared against the dev.2 baseline. Both SVG diagrams are rendered and visually inspected. Independent read-only review checks the candidate against its approved delivery contract before publication; final publication confirmation checks that the delivered content matches the review.
+
+Document walkthroughs cover new project records, existing equivalent documents, compaction recovery, uncertain architecture, owner/worker escalation, incremental preservation, consequential research, protected changes, incomplete evidence, stable/candidate selection, missing pins, local adaptations, concurrent migration and rollback. These are consistency checks of written instructions, not live adoption trials.
+
+| Reading scope | Dev.2 | Dev.3 |
+| --- | ---: | ---: |
+| Core | 1,501 | 1,881 |
+| SETUP + core + method index | 1,972 | 2,609 |
+| First use above + concept | 2,153 | 2,871 |
+| Complex work: base path + all six triggered guides, each once | 3,230 | 4,236 |
+
+The private discussion draft core was 1,800 words. Dev.3 adds required conventions for records, recovery, explicit owner/worker roles and migration. This revision increases text volume; it is not claimed as a word-count reduction. Guidance remains conditional, records load by relevant section, and obsolete overlapping templates are consolidated. Recommendations add 321 words when consulted. Counts exclude optional glossary/background and task-specific templates, measure whitespace-delimited words rather than model tokens, and do not establish reliability. No new demo, live adoption experiment or benchmark was performed.
 
 ## Dev.2 verification
 
@@ -40,6 +55,6 @@ The maintainer reports roughly six months of successful practical use, including
 
 The method consists of Markdown instructions with no required provider, operating system or executable runtime. This is a property of the method, not a claim that every host or model has been tested. Direct repository reading depends on document access. Parallel execution, tool use and independent review depend on the agent host's capabilities and actual permissions.
 
-Optional Python maintainer checks help maintain this repository; they are not needed to read or apply ADAC. A local documentation copy is optional and can support local access, offline use or customization. Reading in one session and configuring a reference for future sessions are different outcomes; neither is a claim of a completed cross-host adoption test.
+Optional Python maintainer checks help maintain this repository; they are not needed to read or apply ADAC. A local documentation copy is optional and can support local access, offline use or customization. Reading the method and establishing durable project records are different outcomes; neither is a claim of a completed cross-host adoption test.
 
 See [maintaining](maintaining.md) for repository checks and [design rationale](design-rationale.md) for the human and AI contributions.

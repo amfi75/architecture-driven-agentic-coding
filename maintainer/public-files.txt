@@ -51,12 +51,11 @@ releases/2.4.0-dev.1/recommendations.md
 releases/2.4.0-dev.2/README.md
 releases/2.4.0-dev.2/core.md
 releases/2.4.0-dev.2/recommendations.md
-templates/agent.md
-templates/change-request.md
+releases/2.4.0-dev.3/README.md
+releases/2.4.0-dev.3/core.md
+releases/2.4.0-dev.3/recommendations.md
+templates/architecture.md
 templates/contract.md
-templates/layer.md
-templates/project-intake.md
+templates/delivery.md
 templates/review-report.md
-templates/scope.yaml
-templates/system-goal.md
 templates/task-package.md

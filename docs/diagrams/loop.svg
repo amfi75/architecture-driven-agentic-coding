@@ -2,33 +2,33 @@
 <text x="525" y="36" text-anchor="middle" font-size="26" font-weight="bold">Where does a problem go?</text>
 <text x="525" y="64" text-anchor="middle" font-size="16" font-weight="normal">The orchestrator resolves internal changes; the user decides requirement changes.</text>
 <rect x="230" y="90" width="590" height="88" rx="12" fill="#dcefe8" stroke="#6a879d" stroke-width="1.5"/>
-<text x="525.0" y="117" text-anchor="middle" font-size="18" font-weight="bold">START · Approved requirements and initial plan</text>
-<text x="525.0" y="142" text-anchor="middle" font-size="16" font-weight="normal">Requirements → architecture / interfaces / tasks</text>
-<text x="525.0" y="165" text-anchor="middle" font-size="16" font-weight="normal">Independent plan review and initial approval precede delivery</text>
+<text x="525.0" y="117" text-anchor="middle" font-size="18" font-weight="bold">START · Authorized work and current agreement</text>
+<text x="525.0" y="142" text-anchor="middle" font-size="16" font-weight="normal">Recover relevant architecture, assignments and evidence</text>
+<text x="525.0" y="165" text-anchor="middle" font-size="16" font-weight="normal">Required initial review and approval precede substantial delivery</text>
 <path d="M 525 178 V 214" fill="none" stroke="#36536b" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="285" y="216" width="480" height="100" rx="12" fill="#e4eef9" stroke="#6a879d" stroke-width="1.5"/>
 <text x="525.0" y="243" text-anchor="middle" font-size="18" font-weight="bold">3 · Implement under the orchestrator</text>
-<text x="525.0" y="268" text-anchor="middle" font-size="16" font-weight="normal">Owners investigate, design and deliver within scope</text>
-<text x="525.0" y="291" text-anchor="middle" font-size="16" font-weight="normal">Boundary requests go to the orchestrator</text>
+<text x="525.0" y="268" text-anchor="middle" font-size="16" font-weight="normal">Component owners design; bounded workers implement</text>
+<text x="525.0" y="291" text-anchor="middle" font-size="16" font-weight="normal">Workers → owner → orchestrator for shared changes</text>
 <path d="M 525 316 V 362" fill="none" stroke="#36536b" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="285" y="364" width="480" height="80" rx="12" fill="#ffffff" stroke="#6a879d" stroke-width="1.5"/>
-<text x="525.0" y="391" text-anchor="middle" font-size="18" font-weight="bold">4 · Verify, validate, independently review</text>
+<text x="525.0" y="391" text-anchor="middle" font-size="18" font-weight="bold">4 · Verify, validate and required review</text>
 <text x="525.0" y="416" text-anchor="middle" font-size="16" font-weight="normal">Check contracts, intended use and preservation</text>
 <path d="M 525 444 V 490" fill="none" stroke="#36536b" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="275" y="492" width="500" height="72" rx="12" fill="#e4eef9" stroke="#6a879d" stroke-width="1.5"/>
 <text x="525.0" y="519" text-anchor="middle" font-size="18" font-weight="bold">Orchestrator classifies findings</text>
 <text x="525.0" y="544" text-anchor="middle" font-size="16" font-weight="normal">Preserve overall requirements and actual authority</text>
 <path d="M 275 527 H 80 V 272 H 283" fill="none" stroke="#36536b" stroke-width="2" marker-end="url(#arrow)"/>
-<text x="94" y="464" text-anchor="start" font-size="16" font-weight="normal">Code defect</text>
+<text x="94" y="464" text-anchor="start" font-size="16" font-weight="normal">Defect / evidence gap</text>
 <text x="94" y="486" text-anchor="start" font-size="16" font-weight="normal">→ back to 3</text>
 <path d="M 525 564 V 596 H 185 V 626" fill="none" stroke="#36536b" stroke-width="2" marker-end="url(#arrow)"/>
 <path d="M 525 596 V 626" fill="none" stroke="#36536b" stroke-width="2" marker-end="url(#arrow)"/>
 <path d="M 525 596 H 865 V 626" fill="none" stroke="#36536b" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="35" y="628" width="300" height="165" rx="12" fill="#e4eef9" stroke="#6a879d" stroke-width="1.5"/>
 <text x="185.0" y="655" text-anchor="middle" font-size="18" font-weight="bold">Internal design / task issue</text>
-<text x="185.0" y="680" text-anchor="middle" font-size="16" font-weight="normal">2 · Orchestrator revises</text>
-<text x="185.0" y="703" text-anchor="middle" font-size="16" font-weight="normal">design, investigation or assignments</text>
-<text x="185.0" y="726" text-anchor="middle" font-size="16" font-weight="normal">Update all affected workers</text>
+<text x="185.0" y="680" text-anchor="middle" font-size="16" font-weight="normal">2 · Owner resolves within scope</text>
+<text x="185.0" y="703" text-anchor="middle" font-size="16" font-weight="normal">Shared boundaries → orchestrator</text>
+<text x="185.0" y="726" text-anchor="middle" font-size="16" font-weight="normal">Update records, owners and workers</text>
 <text x="185.0" y="749" text-anchor="middle" font-size="16" font-weight="normal">Resume 3, then check again</text>
 <text x="185.0" y="772" text-anchor="middle" font-size="16" font-weight="normal">No new human gate</text>
 <rect x="375" y="628" width="300" height="165" rx="12" fill="#fff1d8" stroke="#6a879d" stroke-width="1.5"/>
@@ -41,15 +41,15 @@
 <rect x="725" y="628" width="280" height="165" rx="12" fill="#dcefe8" stroke="#6a879d" stroke-width="1.5"/>
 <text x="865.0" y="655" text-anchor="middle" font-size="18" font-weight="bold">Everything required passes</text>
 <text x="865.0" y="680" text-anchor="middle" font-size="16" font-weight="normal">All criteria met</text>
-<text x="865.0" y="703" text-anchor="middle" font-size="16" font-weight="normal">Independent final review passed</text>
+<text x="865.0" y="703" text-anchor="middle" font-size="16" font-weight="normal">Required independent review passed</text>
 <text x="865.0" y="726" text-anchor="middle" font-size="16" font-weight="normal">No missing required evidence</text>
 <text x="865.0" y="749" text-anchor="middle" font-size="16" font-weight="normal">END · Handoff result</text>
 <text x="865.0" y="772" text-anchor="middle" font-size="16" font-weight="normal">and verification</text>
 <rect x="160" y="842" width="730" height="95" rx="12" fill="#ffffff" stroke="#6a879d" stroke-width="1.5"/>
-<text x="525.0" y="869" text-anchor="middle" font-size="18" font-weight="bold">Worker change request → orchestrator</text>
-<text x="525.0" y="894" text-anchor="middle" font-size="16" font-weight="normal">Need + reason + affected contracts/tasks + options + verification</text>
+<text x="525.0" y="869" text-anchor="middle" font-size="18" font-weight="bold">Worker → component owner → orchestrator</text>
+<text x="525.0" y="894" text-anchor="middle" font-size="16" font-weight="normal">Owner retains accountability; shared-interface changes reach the orchestrator</text>
 <text x="525.0" y="917" text-anchor="middle" font-size="16" font-weight="normal">Pause dependent work only. No unilateral scope or shared-contract changes.</text>
-<text x="525" y="982" text-anchor="middle" font-size="16" font-weight="normal">External login / physical action: targeted unblock, then resume the interrupted step.</text>
-<text x="525" y="1013" text-anchor="middle" font-size="16" font-weight="normal">Returns to 1 or 2 are decisions and instructions, not runtime-enforced transitions.</text>
-<text x="525" y="1044" text-anchor="middle" font-size="15" font-weight="normal">Numbers correspond to the main workflow. Candidate core 2.4.0-dev.2 defines the rules for this substantial-work flow.</text>
+<text x="525" y="982" text-anchor="middle" font-size="16" font-weight="normal">New impact: update understanding, preservation and evidence; continue affected work.</text>
+<text x="525" y="1013" text-anchor="middle" font-size="16" font-weight="normal">External login / physical action: targeted unblock, then resume the interrupted step.</text>
+<text x="525" y="1044" text-anchor="middle" font-size="15" font-weight="normal">Numbers refer to the workflow. Core 2.4.0-dev.3 defines proportionate gates and return paths.</text>
 </g></svg>

@@ -1,13 +1,13 @@
 # Architecture-Driven Agentic Coding
 
-ADAC connects requirements to architectural responsibilities, explicit interfaces and coordinated implementation. The [core](../releases/2.4.0-dev.2/core.md) defines the method.
+ADAC uses architecture to connect requirements to accountable implementation. Its goals are quality through meaningful modularity, speed through controlled parallel work and autonomous completion. The [core](../releases/2.4.0-dev.3/core.md) defines the rules.
 
-Its three goals are maintainable modular software of high quality, faster implementation through controlled parallel work, and autonomous completion within agreed requirements.
+The functional architecture describes capabilities and relationships. Software architecture allocates them to components while addressing quality, constraints and dependencies. The mapping is many-to-many. Boundaries hide consequential decisions, localize change and enable independent development; parallel assignments exploit those boundaries rather than dictate them.
 
-Functional understanding describes the capabilities and behavior needed. Software architecture realizes them while addressing quality, constraints and existing dependencies. One function may involve several components; one component may support several functions. Choose boundaries that hide consequential implementation decisions and localize change. Work allocation follows those boundaries.
+The orchestrator maintains that system view and integrates the result. Component owners investigate difficult questions, design their contributions and retain accountability through integration. Workers execute bounded implementation tasks and return unresolved design questions to their owner. Shared-interface and cross-component decisions reach the orchestrator. Independent reviewers challenge the agreement and evidence without implementing corrections.
 
-The orchestrator retains the whole-system view. A complex component assignment includes design and investigation as well as implementation; a routine coding assignment can be narrower. Explicit ownership avoids leaving design between tasks. Review challenges the integrated result.
+These responsibilities need suitable capabilities, not a fixed number of agents: the orchestrator can own components and owners can implement directly. Strong reasoning can be concentrated on research and design while well-defined implementation uses lighter models.
 
-A modular monolith can benefit. A local fix or inseparable task generally needs ordinary proportionate work. More agents and more folders do not establish useful independence.
+Project `AGENTS.md` identifies the method revision, architecture and delivery records. Those records preserve both design and authorized work across sessions. Updating and checking them during delivery prevents them becoming disconnected from the implementation.
 
-ADAC uses readable, versionable text with no required runtime. Its portability does not guarantee every agent's compliance. Host capabilities determine available execution and review; missing required review remains unfinished work.
+New development establishes the architecture. Iterative changes reuse it where suitable, assess intended delta and preservation, and revisit affected boundaries when warranted. Both use one correction loop, not recurring user gates. ADAC is useful for meaningful modular coordination, including a modular monolith; local or inseparable tasks usually need ordinary proportionate work. Text is portable and inspectable, but instruction compliance depends on agents and host capabilities.

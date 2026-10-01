@@ -1,35 +1,27 @@
 # The delivery loop within architecture-driven work
 
-The diagrams show the substantial-work flow. Architecture-fitting incremental work uses the core's [compact change guidance](../releases/2.4.0-dev.2/core.md#changes-within-the-existing-architecture) and proportionate review; it does not automatically enter the full planning gates.
+The [workflow](diagrams/workflow.svg) shows the initial substantial-work path; it is not a requirement to restart planning for every improvement. The [core](../releases/2.4.0-dev.3/core.md) governs proportionate work, required gates and authority. Its section numbers differ from the diagram's four stages.
 
-The loop supports the architecture-driven method. First understand requirements and the relevant system, decide whether modular decomposition fits and derive architecture, interfaces and assignments, investigating consequential uncertainty as needed. For substantial work, independently review this complete plan and obtain the user's initial approval. Only then enter implementation.
+1. **Understand:** requirements and relevant current system/records.
+2. **Establish or refine architecture:** functional capabilities, software components, interfaces, ownership and work. Initial substantial work receives independent plan review and user approval.
+3. **Deliver:** the orchestrator coordinates component owners; owners can implement directly or delegate bounded tasks. Independent contributions can proceed in parallel after shared decisions are ready.
+4. **Evaluate:** integrate, verify contracts, validate intended use and obtain required independent review. Completion requires the whole agreed outcome and relevant preservation.
 
-The main [workflow diagram](diagrams/workflow.svg) shows the starting point and completion. The diagram below expands the return paths. It is a representation of the instructions in [core 2.4.0-dev.2](../releases/2.4.0-dev.2/core.md), not an executable controller.
+![ADAC correction and decision return paths](diagrams/loop.svg)
 
-![Delivery and change-request return paths](diagrams/loop.svg)
+## Route each finding
 
-## The return paths
-
-| Observation | Recipient and next step | Human decision? |
+| Finding | Recipient and return | User decision? |
 | --- | --- | --- |
-| Missing delta or preservation evidence; newly discovered impact | Orchestrator updates understanding, the change record and affected verification, correcting implementation where needed | No, if overall requirements are preserved |
-| Consequential uncertainty about behavior, design or solution choice | Assigned owner investigates alternatives and evidence; orchestrator coordinates any boundary changes | No, within the agreement |
-| Local implementation defect | Orchestrator/assigned worker repairs implementation and repeats affected checks | No |
-| Missing internal field or behavior; another component needs a change | Worker sends need, reasons, affected contracts/tasks, options and checks to the orchestrator | No, if overall requirements are preserved |
-| Worker assignment is insufficient | Orchestrator revises scope or allocation and coordinates dependent work | No, if overall requirements are preserved |
-| Shared-interface conflict or unsuitable internal design | Orchestrator revisits architecture/interfaces/tasks, distributes one current contract and resequences work before integration | No, if overall requirements are preserved |
-| Required result, acceptance or binding constraint cannot be preserved | Orchestrator proposes exact requirement delta, alternatives and consequences; affected planning/review follows approval | Yes, before relying on the change |
-| Login or physical action only the user can supply | Targeted unblock, then resume the interrupted step | Action/access only; not a new requirements cycle |
-| All required criteria and independent review pass | Handoff complete result and evidence | Completion; no repeated phase gate |
+| Implementation defect or missing change/preservation evidence | Worker/owner corrects the task, then repeats affected checks (3 → 4). | No |
+| New dependency, invariant or effect | Expand relevant understanding and impact/preservation/evidence (1), then continue affected delivery. | No, within the agreement |
+| Worker encounters an invalid design or insufficient scope | Component owner investigates and resolves within its discretion (2 → 3). | No |
+| Shared interface, neighboring-component or architectural boundary needs change | Owner sends the orchestrator reasons, affected tasks/consumers, options and checks; coordinate revised architecture/contracts (2 → 3). | No, if protected commitments remain intact |
+| Repeated broad impact or preservation failures | Reconsider whether architecture localizes change (2); no automatic refactor. | Only if required commitments must change |
+| Required outcome or binding constraint must change | Orchestrator proposes an exact delta (1); obtain approval, revise affected planning/review, then resume. | Yes, before relying on it |
+| Login/access or physical action only the user can supply | Request the targeted unblock and resume the interrupted step. | Bounded action, not a new planning cycle |
+| All required criteria and applicable review pass | Handoff the verified result and consistent architecture/delivery records. | END |
 
-A worker pauses only dependent work while a request is unresolved. It never expands its own authority. The orchestrator may implement directly and revise internal decisions without asking the user about every interface field. An explicitly required technology or compatibility promise cannot be relabeled as internal.
+Pause affected work only; unrelated authorized work continues. Before dependent work resumes, update authoritative records and communicate the same decisions and contract revisions to owners and workers. A stronger model cannot widen a task or relabel a protected commitment. Independent review remains read-only.
 
-## Mapping to the actual instructions
-
-- Core §§1–2: requirements, suitability, functional understanding, architecture/interfaces, consequential investigation, independent initial plan review and approval.
-- Core §§3–4: bounded design/implementation ownership, complete packages, common contracts, requests to the orchestrator and coordinated integration.
-- Core §5: verify contracts, validate intended use, update understanding, independently review and correct. Diagram stage numbers follow the main workflow rather than core section numbers.
-- Core “When the user must decide again”: overall-requirement changes, preserved authority and targeted external unblocks.
-- Core “Completion and learning”: criterion-level evidence, independent final verdict and handoff; missing evidence is not completion.
-
-Thus there are returns to implementation, to internal architecture/task planning, and to requirements when a user decision is necessary. The diagram's arrows summarize those normative instructions. Execution depends on instruction-following agents and their tools. See [verification](verification.md) for what has actually been checked, rather than assuming that drawing a loop establishes enforcement or empirical effectiveness.
+The [change-request guide](../method/change-request-workflow.md) supplies the message format. These are agent instructions, not controller-enforced transitions. [Verification](verification.md) states what has actually been checked.

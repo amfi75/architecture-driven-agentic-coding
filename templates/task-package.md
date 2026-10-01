@@ -1,35 +1,36 @@
-# Bounded task package
+# Assignment
 
-Optional record for [core 2.4.0-dev.2](../releases/2.4.0-dev.2/core.md); a concise message also works. The orchestrator issues and revises it.
+Use this format for new assignments in the delivery record or a linked task record. Choose the section dictated by the role: orchestrator assigns component ownership; the accountable owner assigns bounded worker implementation where delegation is authorized. An orchestrator acting as owner can assign workers directly.
 
-## Purpose and requirements
+## Shared assignment context
 
-- Contribution and related overall requirements:
-- Relevant end-to-end behavior and intended-use scenarios:
-- Derived functional/quality requirements and binding constraints:
-- Observable acceptance and evidence of relevant preservation:
+- Role, named assignee, assigning owner and reporting recipient:
+- Purpose, contribution to the complete result and related overall requirements:
+- Derived behavior/quality, constraints and observable acceptance:
+- Relevant `AGENTS.md`, architecture and delivery sections; exact method revision:
+- Contracts/revisions, providers/consumers, inputs/results, errors and invariants:
+- Permitted edits, exclusions, shared-artifact ownership and design discretion:
+- Dependencies/readiness, integration owner and required checks:
 
-## Context and authority
+A path list alone is not a complete assignment. Give enough purpose and surrounding context without copying the entire conversation.
 
-- Worker/component owner and orchestrator:
-- Responsibilities, hidden decisions, allowed dependencies:
-- Contracts/revisions, providers/consumers, inputs/results, errors/invariants:
-- Authorized edits, exclusions and shared-artifact ownership:
-- Design discretion; investigation/design retained elsewhere, if any:
-- Dependencies/readiness and integration owner:
-- Relevant method instructions and project records:
+## Component-owner assignment
 
-## Investigation, when needed
+- Component or coherent group and its functional/software mapping:
+- Investigation questions, criteria, existing solutions, alternatives and evidence:
+- Design responsibilities, rationale, research stopping condition and remaining validation:
+- Proposed worker tasks, retained decisions and integration/preservation evidence:
 
-- Consequential question, decision criteria and required evidence:
-- Existing solutions, reuse and alternatives:
-- Stopping condition and verification of remaining uncertainty:
+The owner retains accountability through integration, including evaluating delegated results. Decisions within its discretion remain autonomous; interface/cross-component/authority changes go to the orchestrator.
 
-## Delivery and reporting
+## Worker implementation task
 
-- Decisions/rationale and actual behavior/files changed:
-- Checks and observed results mapped to acceptance:
-- Intended-use evidence and integration assumptions:
-- Interface impact, unresolved questions and missing evidence:
+- Established design and implementation outcome:
+- Decisions already settled; bounded implementation discretion:
+- Actual checks to perform and evidence to return:
 
-Use declared interfaces. Send insufficient scope, missing behavior or neighboring-component needs to the orchestrator with reasons, affected work, options and checks; pause dependent work only. Component ownership continues through integration within assigned authority. The orchestrator retains whole-system acceptance; workers cannot accept new limitations on the user's behalf.
+Implement and verify within scope. Report design-invalidating questions or insufficient scope to the owner; pause affected work and continue unrelated authorized work. Do not independently redesign architecture, restart parent planning or broaden permissions.
+
+## Result and continuity
+
+Report decisions, changed behavior/files, actual check results, intended-use/preservation evidence, interface effects, unresolved questions and next actions. Record progress so another authorized context can resume. Neither worker success nor delegation transfers whole-system acceptance or authority to accept new limitations.

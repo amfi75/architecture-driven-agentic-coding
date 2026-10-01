@@ -1,15 +1,17 @@
 # Components and public surfaces
 
-A component boundary assigns responsibility and hides implementation decisions. A public surface is an interface another component or external consumer relies on; it need not be internet-facing. The [core](../releases/2.4.0-dev.2/core.md) determines change authority.
+A component boundary assigns responsibility and hides implementation decisions. A public surface is an interface another component or external consumer relies on; it need not be internet-facing. The [core](../releases/2.4.0-dev.3/core.md) determines change authority.
 
-## From functions to boundaries
+## Connect functions and components
 
-Trace needed behavior across the system, then consider quality, shared state, dependencies and likely changes. Avoid turning each processing step into a module automatically. A storage boundary can hide representation and indexing while serving several capabilities. A functional view explains what happens; the component view explains who owns the decisions that realize it.
+The authoritative architecture document records capabilities, relationships, component allocations and rationale. Trace needed behavior, then consider quality, shared state, dependencies and likely change. One capability may cross components; one component may support several capabilities. A processing step need not become a module.
 
-## Describe the dependency
+Prefer cohesive responsibilities and useful abstractions that limit coupling and localize change. A storage boundary can hide representation while supporting several capabilities. Specify required portability from actual needs, rather than assuming every backend must be supported. Record allowed dependencies, private internals and observed accidental coupling separately.
 
-For an affected interface, capture provider/consumers, purpose, inputs/results, preconditions, errors, invariants, ordering or ownership where relevant, compatibility and revision. Include observable examples where they clarify semantics.
+## Describe the interface
 
-Look beyond functions: events, files, configuration, CLI output, database views, prompts and fixtures can all be contracts. A private helper imported elsewhere reveals coupling, not necessarily an intentional interface. Distinguish actual dependencies from desired ones before changing either.
+Use the [interface format](../templates/contract.md) for a new contract. Capture provider/consumers, purpose, revision, inputs/results, semantics, errors, invariants, relevant ordering/ownership and compatibility. Examples can clarify obligations. Events, files, configuration, CLI output, database views, prompts and fixtures can all be contracts.
 
-Use enough detail to coordinate independent work without exposing every internal function. Shared design decisions need a clear owner. Coordinate changes through the [change-request guide](change-request-workflow.md); binding external commitments remain protected even when files are labeled internal.
+Link detailed contracts from the architecture instead of maintaining duplicate definitions. Inspect discrepancies between records and implementation before affected work; mark intended changes separately from implemented status. Use enough detail for compatible independent work without documenting every internal function.
+
+Component owners retain design responsibility. Workers raise questions to their owner; shared contract changes use the [coordination route](change-request-workflow.md). Protected external commitments remain protected regardless of file names.

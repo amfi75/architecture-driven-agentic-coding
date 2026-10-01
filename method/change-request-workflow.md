@@ -1,17 +1,25 @@
 # Change requests
 
-Use the [core](../releases/2.4.0-dev.2/core.md) to distinguish internal design decisions from binding commitments.
+The [core](../releases/2.4.0-dev.3/core.md) distinguishes derived decisions from protected commitments. Requests feed the existing correction loop; they do not create another approval phase.
 
-A request is warranted when the assignment cannot deliver its purpose using its declared scope and contracts. Send the orchestrator:
+Workers raise design-invalidating questions or insufficient scope with their component owner. The owner resolves issues within assigned discretion. Interface changes, neighboring-component work, private-internal access or changes beyond that discretion go to the orchestrator. If the orchestrator also owns the component, the route is direct.
 
-- the missing behavior or decision and why it matters;
-- affected contracts, owners, consumers and dependent work;
-- viable options, consequences and proposed checks.
+## Request format
 
-Pause dependent work only. For example, an owner discovering that an event lacks required identity information can propose a contract change; it cannot independently redefine the event and neighboring consumers.
+Use a concise message and preserve its consequential decision in the delivery record:
 
-The orchestrator investigates alternatives and consults affected owners. For an internal revision, record the decision, distribute one updated contract and assignment, coordinate providers/consumers and repeat affected integration checks. A short existing task note suffices.
+- requester, accountable owner and decision recipient;
+- unmet behavior/requirement, current assignment or contract revision and reason;
+- affected components, consumers and dependent tasks;
+- proposed change, alternatives, compatibility/quality consequences and checks;
+- dependent work paused and unrelated authorized work continuing.
 
-If preserving the agreed outcome, compatibility or another binding constraint is impossible, propose the precise requirement delta to the user before relying on it. An explicitly required technology remains binding; an agent-selected implementation can be revised internally. A document label cannot change that distinction.
+For example, missing event identity may require a shared contract revision. A worker reports it to the owner rather than silently changing the event and consumers.
 
-Requests can arise during research, design, implementation or review. They feed the same correction loop rather than create another recurring approval phase.
+## Decision and coordination
+
+The orchestrator consults affected owners and checks alternatives against the agreement. Record the decision, rationale, authority basis, affected contract/architecture/task revisions, owners, sequencing, recipients and verification. Communicate common revisions before dependent work resumes; coordinate providers/consumers and repeat affected integration checks. An existing task note suffices; no separate per-field form is required.
+
+If the required result, compatibility or another binding commitment cannot be preserved, propose the exact delta, alternatives and consequences to the user. Preserve approval history and update affected planning only after approval. Pending or rejected deltas are unauthorized. An agent-chosen technology may be revised internally; an explicitly required technology cannot be relabeled internal.
+
+Close the request with actual evidence and updated records. Research, implementation and review can all reveal further questions; route them according to responsibility and authority.

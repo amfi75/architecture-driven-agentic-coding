@@ -1,17 +1,18 @@
 # Glossary
 
-The [core](../releases/2.4.0-dev.2/core.md) defines the shared commitments.
+The [core](../releases/2.4.0-dev.3/core.md) defines the shared requirements.
 
 | Term | Meaning |
 | --- | --- |
-| Overall requirements / Delivery Contract | Agreed outcome, behavior, quality, constraints, non-goals, acceptance and authority, with approved revisions. |
-| Functional understanding | Needed capabilities, behavior and relationships; an input to software architecture. |
-| Architecture | Responsibilities, hidden decisions, dependencies, interfaces and rationale. |
-| Interface contract / public surface | Obligations relied on by providers and consumers, including non-code formats and behavior. |
-| Derived decision | Revisable internal design or assignment chosen to satisfy overall requirements. |
-| Orchestrator | Agent accountable for system understanding, architecture, coordination and the integrated result. |
-| Component owner | Bounded worker assigned design and delivery responsibility, including needed investigation. |
-| Verification / validation | Checking specified obligations / checking fitness for intended use. |
-| Controlled fan-out | Starting suitably independent, ready assignments with compatible contracts. |
-| Change request | Worker proposal for an interface, neighboring-component or scope revision. |
+| Delivery Contract | Agreed requirements, acceptance, constraints, non-goals and authority, with exact approved revisions/deltas; kept distinct from mutable delivery state. |
+| Functional architecture | Capabilities and relationships, recorded with their allocation to software components. |
+| Software architecture | Component responsibilities, hidden decisions, dependencies, interfaces and rationale addressing function, quality and constraints. |
+| Interface contract / public surface | Provider/consumer obligations, including non-code formats and behavior. |
+| Derived decision | Revisable internal design or assignment chosen to satisfy the agreement. |
+| Orchestrator | Owns system understanding, architecture, coordination and the complete outcome. |
+| Component owner | Owns investigation, design, delivery and integration of an assigned component/group; retains accountability when delegating. |
+| Worker | Executes a bounded implementation task and reports to its accountable owner. |
+| Verification / validation | Checking specified obligations / fitness for intended use. |
+| Controlled fan-out | Starting sufficiently independent, ready work against compatible contracts. |
+| Change request | Proposal routed to the owner, then orchestrator where boundaries or authority require it. |
 | Delta / Preserve / Impact / Evidence | Intended change, behavior retained, plausible effects and checks of both. |

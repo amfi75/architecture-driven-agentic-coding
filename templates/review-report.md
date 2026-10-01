@@ -1,5 +1,7 @@
 # Independent review report
 
+Use this format for a new review record; retain an equivalent existing record. Review remains read-only.
+
 - Review stage: initial plan or final acceptance:
 - Reviewer and basis of independence; read-only role:
 - Agreed requirements, approved revision and explicit deltas:
@@ -16,9 +18,9 @@
 | Scope and change authority | | | |
 
 - Requirement preservation and any unauthorized change:
-- Component responsibilities, private internals and coupling:
+- Functional/software mappings, records versus implementation, responsibilities, private internals and coupling:
 - Shared contract revisions and dependent consumers:
-- Derived worker requirements, design ownership and cross-cutting coverage:
+- Owner/worker requirements, reporting routes, retained design accountability and cross-cutting coverage:
 - Reuse, dependencies and targeted user unblocks:
 - Tests performed/not performed and actual outputs:
 

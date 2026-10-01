@@ -1,25 +1,40 @@
-# Read ADAC from the repository
+# Read and apply ADAC
 
-Give the agent the repository link and your task. No installer, skill or local copy is required. Copying remains useful for offline access or customization.
+Give the agent the repository and task. No installer, skill or method copy is required. Reading the method is a read-only action; applying it to authorized work also establishes project records.
 
-## Select and read one revision
+## Select one exact revision
 
-Honor an existing project pin. Otherwise resolve the requested source to an exact commit; this candidate is **2.4.0-dev.2** on `adac-2.4-system-understanding`. Retrieve actual document contents from that same commit and report the revision and documents read. A link alone supplies no instructions. If access fails or a pinned release is missing, report it; do not invent content or silently substitute a version.
+1. Read the project's existing root `AGENTS.md` and honor its method pin. A missing or inaccessible pin is an unresolved dependency, not permission to substitute another version.
+2. For a new unpinned project, use the latest stable release identified by the [main README](https://github.com/amfi75/architecture-driven-agentic-coding/tree/main). This branch contains **2.4.0-dev.3**, a candidate selected only by explicit request; current stable is **2.3.0**.
+3. Resolve the selected reference to one exact commit and retrieve actual documents from that commit. Report the revision and documents read. A URL alone supplies no instructions. Do not mix core, guides or templates from different commits.
+4. Read the selected core, understand the task and assess suitability. For this candidate, the [core](releases/2.4.0-dev.3/core.md) contains all requirements. If ADAC applies, use the [method index](method/README.md) to read explanations before the activities they cover. Read [capability advice](releases/2.4.0-dev.3/recommendations.md) when staffing or revising assignments.
 
-Read the [core](releases/2.4.0-dev.2/core.md), understand the task and assess suitability. When ADAC applies, read the [method index](method/README.md) and the guides triggered by the work before the affected decisions. The core contains all shared commitments; guides explain their application. Consult [capability advice](releases/2.4.0-dev.2/recommendations.md) when useful. Workers receive relevant instructions and a complete bounded assignment from the orchestrator, without assumed context inheritance.
+Checking for an update reports availability; it does not change the project pin. An explicit upgrade follows [migration](docs/versioning-and-migration.md#deliberate-migration).
 
-## Continued use and local copies
+## Establish the project records
 
-Session reading requires no persistent change. For continued use, when authorized, add a short reference to the project's existing agent instructions using an entry point the host actually loads:
+For selected, authorized ADAC work, retain existing equivalent architecture and delivery documents. Otherwise create `ARCHITECTURE.md` and `DELIVERY.md` using the [architecture](templates/architecture.md) and [delivery](templates/delivery.md) templates. Keep one authoritative account; link detailed contracts and records rather than copying them into multiple places. Do not create empty paperwork or invent missing architecture. Read-only evaluation and tasks that do not use ADAC do not require these writes.
+
+Add this block to the project's root `AGENTS.md`, replacing placeholders with actual paths and a credential-free source. Preserve unrelated instructions; create the file if absent.
 
 ```text
-ADAC source: <credential-free repository URL>
-Revision: <full commit ID>
-Read <revision-specific SETUP.md URL> and its core. When ADAC fits,
-use the method index to read relevant guides before affected decisions.
-Preserve project requirements, permissions and pins; migrate only on request.
+ADAC source: <repository URL>
+ADAC revision: <full commit ID>; core: <release/version>
+Architecture: <authoritative document path>
+Delivery: <authoritative document path>
+Read the pinned core and these records before starting or resuming ADAC work.
+Recover the approved agreement, relevant architecture and your authorized task.
+Use only relevant sections; investigate discrepancies before affected changes.
+Follow the method index at the same revision for applicable explanations.
+Do not migrate the method or approved commitments without explicit authority.
 ```
 
-Verify saved links and distinguish session reading from persistent configuration. Neither proves future agent compliance. Local copies retain source revision, working relative links and identified adaptations. On an explicit update, review differences before changing the reference; removing ADAC means removing only its reference. Preserve unrelated instructions and copies. Global changes need their own authority.
+The architecture record contains functional capabilities, relationships, software components, their mapping, responsibilities, dependencies, interfaces, rationale and constraints. Delivery separates exact approved commitments/approval history from changing assignments, progress and evidence. New work starts with proposed requirements; never label them approved until approval exists.
 
-The [standalone release](releases/2.4.0-dev.2/README.md) is another reading option. The [publication manifest](maintainer/public-files.txt) is maintainer tooling, not an installation list.
+The orchestrator explicitly directs participating agents to the entry point; do not assume harness auto-discovery. Owners give workers bounded requirements, design, context, checks and a reporting route. Reopening a conversation or receiving a summary does not replace recovering current records. Independent reviewers receive the exact review baseline and remain read-only.
+
+## Local copies and version changes
+
+Copying the method is supported for offline access or customization. Preserve source revision, working links and identified local adaptations; the [standalone snapshot](releases/2.4.0-dev.3/README.md) is self-contained. Copying method files and maintaining project records are separate activities. Verify recorded source access and project paths; neither proves future agent compliance.
+
+Follow the existing migration guide to upgrade or roll back. Global instruction changes require separate authority. Removing an ADAC reference does not authorize deleting the project's architectural knowledge or approval evidence. Maintainer scripts and the publication manifest are not installation requirements.

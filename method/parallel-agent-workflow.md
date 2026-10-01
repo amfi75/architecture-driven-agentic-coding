@@ -1,19 +1,21 @@
 # Controlled parallel work
 
-Architecture makes simultaneous contributions coherent. Apply the [core](../releases/2.4.0-dev.2/core.md) to select ready packages with compatible interfaces and manageable dependencies.
+Architecture enables independent contributions; coordination keeps them compatible. Apply the [core](../releases/2.4.0-dev.3/core.md) and use [assignment formats](../templates/task-package.md) when creating assignments.
 
-## Allocate responsibility before files
+## Separate ownership from implementation
 
-A component owner receives the component's purpose, derived behavior and quality, design discretion, investigation needs and acceptance. A routine implementer can receive a narrower established design. Neither assignment creates additional authority. Keep design ownership explicit when implementation is split.
+The orchestrator assigns component owners purpose, derived behavior/quality, interfaces, design discretion, research questions and acceptance. Owners turn defensible designs into bounded worker tasks where delegation is useful and authorized. Workers receive established decisions, permitted changes, checks and a reporting route to the owner. Delegation does not transfer the owner's design or integration accountability.
 
-Use the optional [task package](../templates/task-package.md). A message with the same information works. Include enough surrounding system context to reason about integration, without copying the entire orchestration history. The orchestrator retains cross-cutting outcomes and uncovered requirements.
+Owners can implement directly, cover coherent component groups, or be the orchestrator itself. No extra agent hierarchy or one-agent-per-layer arrangement is required. The orchestrator checks cross-cutting outcomes and requirements not covered by individual assignments.
 
 ## Check readiness
 
-Confirm common interface revisions, dependency order, shared-file ownership and integration evidence. Separate paths do not guarantee independent semantics. Resolve a shared decision serially before parallel implementation when necessary. Do not select boundaries merely to employ available agents.
+Confirm shared decisions, common interface revisions, dependency order, shared-artifact ownership and integration evidence before concurrent implementation. Separate paths do not guarantee independent semantics. Resolve shared uncertainty before dependent implementation. Work allocation follows meaningful architecture rather than available agent count.
+
+Supply relevant sections of `AGENTS.md`, architecture and delivery records at each delegation; do not assume context inheritance. Preserve current assignments and decisions so replacement contexts can resume without the entire conversation.
 
 ## Coordinate and integrate
 
-Workers report actual decisions, outcomes and boundary pressure. The orchestrator resolves competing assumptions, updates affected assignments and integrates throughout delivery. A component owner follows its contribution through integration; passing local checks is insufficient for whole-system acceptance.
+Workers report evidence and design/scope problems to their owner. Owners resolve assigned internal questions and escalate interface, neighboring-component or authority changes to the orchestrator. Updated contracts and records reach affected owners and workers before dependent work resumes. Owners evaluate and integrate worker output; the orchestrator evaluates the complete result.
 
-Worktrees are optional and do not isolate shared ports, databases or services. Serial delivery remains possible when concurrency is unavailable; report the actual execution mode. Independent review still needs independence.
+Worktrees isolate files, not shared ports, databases or services. Use the host's available execution capabilities; serial delivery is possible when parallel execution is unavailable. Record actual mode rather than claim concurrency. Independent review still requires independence.
