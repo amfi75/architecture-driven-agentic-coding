@@ -1,44 +1,35 @@
-# Worker task package
+# Bounded task package
 
-Optional record for [core 2.4.0-dev.1](../releases/2.4.0-dev.1/core.md). A concise message with the same contents also works. The orchestrator issues and revises this assignment; it is not a separate human approval gate.
+Optional record for [core 2.4.0-dev.2](../releases/2.4.0-dev.2/core.md); a concise message also works. The orchestrator issues and revises it.
 
-## Goal and derived requirements
+## Purpose and requirements
 
-- requested contribution and related overall requirement IDs:
-- expected behavior and quality:
-- binding constraints relevant to this task:
-- acceptance criteria and observable results:
+- Contribution and related overall requirements:
+- Relevant end-to-end behavior and intended-use scenarios:
+- Derived functional/quality requirements and binding constraints:
+- Observable acceptance and evidence of relevant preservation:
 
-## Architecture context
+## Context and authority
 
-- component responsibilities and decisions hidden behind their interfaces:
-- allowed dependencies and private internals to avoid:
-- interface contracts, provider/consumer roles and current revision:
-- inputs, outputs, semantics, errors and invariants:
-- dependencies that must be ready before work begins:
+- Worker/component owner and orchestrator:
+- Responsibilities, hidden decisions, allowed dependencies:
+- Contracts/revisions, providers/consumers, inputs/results, errors/invariants:
+- Authorized edits, exclusions and shared-artifact ownership:
+- Design discretion; investigation/design retained elsewhere, if any:
+- Dependencies/readiness and integration owner:
+- Relevant method instructions and project records:
 
-## Assignment and authority
+## Investigation, when needed
 
-- assigned worker and orchestrator:
-- allowed components/files and shared-file ownership:
-- excluded changes:
-- integration owner and dependent tasks:
-- reporting channel:
+- Consequential question, decision criteria and required evidence:
+- Existing solutions, reuse and alternatives:
+- Stopping condition and verification of remaining uncertainty:
 
-## Preparation and reuse
+## Delivery and reporting
 
-Read the overall requirement context, component guidance and relevant interfaces. Check readiness and existing components before building. Record reuse/adapt/build rationale and external dependencies proportionately. A path list alone is not the assignment.
+- Decisions/rationale and actual behavior/files changed:
+- Checks and observed results mapped to acceptance:
+- Intended-use evidence and integration assumptions:
+- Interface impact, unresolved questions and missing evidence:
 
-## Change requests
-
-Send missing interface behavior, neighboring-module changes, private-internal dependencies or insufficient scope to the orchestrator. State the need, affected contracts/tasks, options, consequences and proposed verification. Pause dependent work only. Do not expand your scope or silently change shared assumptions. Use the updated contract and assignment supplied by the orchestrator.
-
-## Verification and handoff
-
-- relevant tests and observed behavior, with actual results:
-- acceptance mapping and integration assumptions:
-- files/behavior changed and interface impact:
-- unresolved questions, failed checks and missing evidence:
-- relevant review focus and follow-up:
-
-The orchestrator retains whole-system coverage and integration. New limitations cannot be accepted by a worker on the user's behalf.
+Use declared interfaces. Send insufficient scope, missing behavior or neighboring-component needs to the orchestrator with reasons, affected work, options and checks; pause dependent work only. Component ownership continues through integration within assigned authority. The orchestrator retains whole-system acceptance; workers cannot accept new limitations on the user's behalf.

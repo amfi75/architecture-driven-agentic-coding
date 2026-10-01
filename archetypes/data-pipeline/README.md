@@ -7,6 +7,6 @@ Declare source records, normalized records, sink commands, and log events before
 
 ## Optional architecture aid
 
-First understand requirements and assess whether modular decomposition makes ADAC useful. The adjacent [responsibility map](layers.yaml) is a starting hypothesis, not a required layer sequence or one-agent-per-layer assignment. Adapt it to functional needs, quality goals and the existing system. A modular monolith is sufficient where appropriate.
+The adjacent [responsibility map](layers.yaml) is a design hypothesis. Derive boundaries from required capabilities, quality, constraints and the actual system; functions need not map one-to-one to components. No layer sequence, service topology or one-agent-per-layer assignment is prescribed.
 
-Define provider/consumer behavior, errors and relevant invariants before dependent work. The orchestrator derives bounded assignments, coordinates shared decisions and integrates the outcome; it may implement itself. Parallelize suitable independent tasks and sequence shared dependencies. Workers request interface, neighboring-module or scope changes through the orchestrator. Derived internal changes can be decided there; overall-requirement or binding-constraint changes return to the user. Follow [core 2.4.0-dev.1](../../releases/2.4.0-dev.1/core.md).
+Investigate consequential uncertainty and assign design ownership before dependent implementation. Use [core 2.4.0-dev.2](../../releases/2.4.0-dev.2/core.md) for contracts, bounded assignments, coordinated changes and integrated acceptance. The archetype adds no separate rules.

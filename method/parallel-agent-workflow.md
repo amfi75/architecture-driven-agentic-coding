@@ -1,30 +1,19 @@
 # Controlled parallel work
 
-Parallelism is an explicit means of accelerating implementation. Architecture provides the responsibilities and interfaces that make simultaneous contributions coherent. The [core](../releases/2.4.0-dev.1/core.md) defines the authority rules.
+Architecture makes simultaneous contributions coherent. Apply the [core](../releases/2.4.0-dev.2/core.md) to select ready packages with compatible interfaces and manageable dependencies.
 
-## Readiness for fan-out
+## Allocate responsibility before files
 
-Before assigning dependent implementation, the orchestrator establishes:
+A component owner receives the component's purpose, derived behavior and quality, design discretion, investigation needs and acceptance. A routine implementer can receive a narrower established design. Neither assignment creates additional authority. Keep design ownership explicit when implementation is split.
 
-1. Shared requirements and the affected architecture/interfaces.
-2. Complete worker assignments with derived behavior, constraints, scope and acceptance.
-3. A dependency order and common interface revision.
-4. Ownership of shared files and decisions, plus an integration and verification plan.
+Use the optional [task package](../templates/task-package.md). A message with the same information works. Include enough surrounding system context to reason about integration, without copying the entire orchestration history. The orchestrator retains cross-cutting outcomes and uncovered requirements.
 
-Independence means compatible assumptions and manageable dependencies, not just non-overlapping paths. Two separate modules that disagree about message semantics are not ready for independent implementation. Conversely, a single module may contain independent tasks when their shared contracts are stable.
+## Check readiness
 
-## Assign work to responsibilities
+Confirm common interface revisions, dependency order, shared-file ownership and integration evidence. Separate paths do not guarantee independent semantics. Resolve a shared decision serially before parallel implementation when necessary. Do not select boundaries merely to employ available agents.
 
-Use bounded tasks that fit meaningful responsibilities. An agent need not own an entire horizontal layer. The orchestrator can implement across its authorized internal components and retain integration work. Use serial coordination for a shared decision, then resume independent work.
+## Coordinate and integrate
 
-An assignment includes the link to overall requirements, architecture context, expected behavior/quality, contracts and revisions, allowed changes, dependencies, acceptance and reporting. Workers do not replan the whole project or choose a new method independently.
+Workers report actual decisions, outcomes and boundary pressure. The orchestrator resolves competing assumptions, updates affected assignments and integrates throughout delivery. A component owner follows its contribution through integration; passing local checks is insufficient for whole-system acceptance.
 
-## Coordinate questions and changes
-
-Workers send interface, neighboring-component and scope needs to the orchestrator. Pause only affected work. The orchestrator evaluates alternatives, consults affected workers, updates the common contract and assignments, and prevents conflicting implementations. A worker cannot widen its own authority. Internal adjustments do not create a human approval gate; overall-requirement changes do.
-
-## Integrate throughout delivery
-
-Integrate coherent contributions, test their interaction and check cross-cutting requirements. A worker's passing tests do not establish whole-system acceptance. Independent review examines contracts, coupling, scope and the actual user result. Correct findings and repeat affected checks until completion.
-
-Separate worktrees or tools may help isolate files, but they are optional host facilities. They do not isolate shared services, ports or databases. If agent concurrency is unavailable, the same work can run serially; do not claim a parallel run occurred. Independent review remains independent.
+Worktrees are optional and do not isolate shared ports, databases or services. Serial delivery remains possible when concurrency is unavailable; report the actual execution mode. Independent review still needs independence.

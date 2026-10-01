@@ -22,9 +22,9 @@
 <text x="525" y="371" text-anchor="start" font-size="15" font-weight="normal">Yes</text>
 <rect x="210" y="383" width="580" height="112" rx="12" fill="#ffffff" stroke="#6a879d" stroke-width="1.5"/>
 <text x="500.0" y="410" text-anchor="middle" font-size="18" font-weight="bold">2 · Derive architecture, interfaces and tasks</text>
-<text x="500.0" y="435" text-anchor="middle" font-size="16" font-weight="normal">Responsibilities, dependencies and hidden internals</text>
-<text x="500.0" y="458" text-anchor="middle" font-size="16" font-weight="normal">Provider/consumer behavior, errors and invariants</text>
-<text x="500.0" y="481" text-anchor="middle" font-size="16" font-weight="normal">Worker requirements, scope, readiness and acceptance</text>
+<text x="500.0" y="435" text-anchor="middle" font-size="16" font-weight="normal">Behavior + quality + constraints → justified boundaries</text>
+<text x="500.0" y="458" text-anchor="middle" font-size="16" font-weight="normal">Investigate uncertainty; define interface behavior</text>
+<text x="500.0" y="481" text-anchor="middle" font-size="16" font-weight="normal">Assign purpose, design ownership and acceptance</text>
 <path d="M 500 495 V 521" fill="none" stroke="#36536b" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="210" y="523" width="580" height="94" rx="12" fill="#fff1d8" stroke="#6a879d" stroke-width="1.5"/>
 <text x="500.0" y="550" text-anchor="middle" font-size="18" font-weight="bold">Review the complete initial plan</text>
@@ -39,11 +39,11 @@
 <path d="M 500 763 V 786" fill="none" stroke="#36536b" stroke-width="2" marker-end="url(#arrow)"/>
 <path d="M 500 763 H 810 V 786" fill="none" stroke="#36536b" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="55" y="788" width="270" height="90" rx="12" fill="#ffffff" stroke="#6a879d" stroke-width="1.5"/>
-<text x="190.0" y="815" text-anchor="middle" font-size="18" font-weight="bold">Worker A</text>
-<text x="190.0" y="840" text-anchor="middle" font-size="16" font-weight="normal">Derived requirements</text>
+<text x="190.0" y="815" text-anchor="middle" font-size="18" font-weight="bold">Component owner</text>
+<text x="190.0" y="840" text-anchor="middle" font-size="16" font-weight="normal">Investigate / design / deliver</text>
 <text x="190.0" y="863" text-anchor="middle" font-size="16" font-weight="normal">Bounded assignment</text>
 <rect x="365" y="788" width="270" height="90" rx="12" fill="#ffffff" stroke="#6a879d" stroke-width="1.5"/>
-<text x="500.0" y="815" text-anchor="middle" font-size="18" font-weight="bold">Worker B</text>
+<text x="500.0" y="815" text-anchor="middle" font-size="18" font-weight="bold">Implementation worker</text>
 <text x="500.0" y="840" text-anchor="middle" font-size="16" font-weight="normal">Same shared contracts</text>
 <text x="500.0" y="863" text-anchor="middle" font-size="16" font-weight="normal">Bounded assignment</text>
 <rect x="675" y="788" width="270" height="90" rx="12" fill="#ffffff" stroke="#6a879d" stroke-width="1.5"/>
@@ -53,8 +53,8 @@
 <path d="M 190 878 V 926 H 500 V 947" fill="none" stroke="#36536b" stroke-width="2" marker-end="url(#arrow)"/>
 <path d="M 810 878 V 926 H 500 M 500 878 V 926" fill="none" stroke="#36536b" stroke-width="2"/>
 <rect x="210" y="949" width="580" height="94" rx="12" fill="#ffffff" stroke="#6a879d" stroke-width="1.5"/>
-<text x="500.0" y="976" text-anchor="middle" font-size="18" font-weight="bold">4 · Integrate, verify and independently review</text>
-<text x="500.0" y="1001" text-anchor="middle" font-size="16" font-weight="normal">Correct defects and internal design problems; repeat</text>
+<text x="500.0" y="976" text-anchor="middle" font-size="18" font-weight="bold">4 · Integrate, validate and independently review</text>
+<text x="500.0" y="1001" text-anchor="middle" font-size="16" font-weight="normal">Check contracts and intended use; correct and repeat</text>
 <text x="500.0" y="1024" text-anchor="middle" font-size="16" font-weight="normal">Change overall requirements only with user approval</text>
 <path d="M 500 1043 V 1074" fill="none" stroke="#36536b" stroke-width="2" marker-end="url(#arrow)"/>
 <text x="524" y="1064" text-anchor="start" font-size="15" font-weight="normal">All required criteria and final review pass</text>

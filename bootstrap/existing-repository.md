@@ -16,11 +16,11 @@ Record the affected architecture, interface semantics and known gaps. For exampl
 
 ## Choose the proportionate next step
 
-If the change fits the existing architecture but has a meaningful regression surface, follow the [incremental-change guidance](../releases/2.4.0-dev.1/core.md#changes-within-the-existing-architecture) in the current task record. Do not derive a new architecture solely to satisfy this bootstrap. Substantial work still needs the reviewed plan and initial approval below; a trivial local change retains ordinary proportionate practices.
+If the change fits the existing architecture but has a meaningful regression surface, follow the [incremental-change guidance](../releases/2.4.0-dev.2/core.md#changes-within-the-existing-architecture) in the current task record. Do not derive a new architecture solely to satisfy this bootstrap. Substantial work still needs the reviewed plan and initial approval below; a trivial local change retains ordinary proportionate practices.
 
 ## Plan from the requirements
 
-Reuse suitable existing architecture. Explain any proposed changes and quality tradeoffs. Derive tasks with expected behavior, contracts/revisions, scope, dependencies and acceptance. Identify shared decisions to resolve before fan-out and explicitly assign integration and cross-cutting requirements to the orchestrator.
+Reuse suitable existing architecture. Explain any proposed changes and quality tradeoffs. Investigate consequential uncertainty about the design or solution choice. Derive tasks with purpose, behavior/quality, design ownership, contracts/revisions, scope, dependencies and intended-use evidence. Identify shared decisions to resolve before fan-out and explicitly assign integration and cross-cutting requirements to the orchestrator.
 
 Distinguish binding constraints from revisable internal choices. Resolve material requirements ambiguity with the user; internal architecture uncertainty can be investigated by the orchestrator. Independently review the complete substantial-work plan and obtain initial approval before implementing it.
 

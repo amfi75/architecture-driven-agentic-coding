@@ -8,12 +8,12 @@
 <path d="M 525 178 V 214" fill="none" stroke="#36536b" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="285" y="216" width="480" height="100" rx="12" fill="#e4eef9" stroke="#6a879d" stroke-width="1.5"/>
 <text x="525.0" y="243" text-anchor="middle" font-size="18" font-weight="bold">3 · Implement under the orchestrator</text>
-<text x="525.0" y="268" text-anchor="middle" font-size="16" font-weight="normal">Workers follow their current assignments</text>
+<text x="525.0" y="268" text-anchor="middle" font-size="16" font-weight="normal">Owners investigate, design and deliver within scope</text>
 <text x="525.0" y="291" text-anchor="middle" font-size="16" font-weight="normal">Boundary requests go to the orchestrator</text>
 <path d="M 525 316 V 362" fill="none" stroke="#36536b" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="285" y="364" width="480" height="80" rx="12" fill="#ffffff" stroke="#6a879d" stroke-width="1.5"/>
-<text x="525.0" y="391" text-anchor="middle" font-size="18" font-weight="bold">4 · Integrate, verify, independently review</text>
-<text x="525.0" y="416" text-anchor="middle" font-size="16" font-weight="normal">Compare the complete result with acceptance</text>
+<text x="525.0" y="391" text-anchor="middle" font-size="18" font-weight="bold">4 · Verify, validate, independently review</text>
+<text x="525.0" y="416" text-anchor="middle" font-size="16" font-weight="normal">Check contracts, intended use and preservation</text>
 <path d="M 525 444 V 490" fill="none" stroke="#36536b" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="275" y="492" width="500" height="72" rx="12" fill="#e4eef9" stroke="#6a879d" stroke-width="1.5"/>
 <text x="525.0" y="519" text-anchor="middle" font-size="18" font-weight="bold">Orchestrator classifies findings</text>
@@ -27,7 +27,7 @@
 <rect x="35" y="628" width="300" height="165" rx="12" fill="#e4eef9" stroke="#6a879d" stroke-width="1.5"/>
 <text x="185.0" y="655" text-anchor="middle" font-size="18" font-weight="bold">Internal design / task issue</text>
 <text x="185.0" y="680" text-anchor="middle" font-size="16" font-weight="normal">2 · Orchestrator revises</text>
-<text x="185.0" y="703" text-anchor="middle" font-size="16" font-weight="normal">architecture, interfaces or scope</text>
+<text x="185.0" y="703" text-anchor="middle" font-size="16" font-weight="normal">design, investigation or assignments</text>
 <text x="185.0" y="726" text-anchor="middle" font-size="16" font-weight="normal">Update all affected workers</text>
 <text x="185.0" y="749" text-anchor="middle" font-size="16" font-weight="normal">Resume 3, then check again</text>
 <text x="185.0" y="772" text-anchor="middle" font-size="16" font-weight="normal">No new human gate</text>
@@ -51,5 +51,5 @@
 <text x="525.0" y="917" text-anchor="middle" font-size="16" font-weight="normal">Pause dependent work only. No unilateral scope or shared-contract changes.</text>
 <text x="525" y="982" text-anchor="middle" font-size="16" font-weight="normal">External login / physical action: targeted unblock, then resume the interrupted step.</text>
 <text x="525" y="1013" text-anchor="middle" font-size="16" font-weight="normal">Returns to 1 or 2 are decisions and instructions, not runtime-enforced transitions.</text>
-<text x="525" y="1044" text-anchor="middle" font-size="15" font-weight="normal">Numbers correspond to the main workflow. Candidate core 2.4.0-dev.1 defines the rules for this substantial-work flow.</text>
+<text x="525" y="1044" text-anchor="middle" font-size="15" font-weight="normal">Numbers correspond to the main workflow. Candidate core 2.4.0-dev.2 defines the rules for this substantial-work flow.</text>
 </g></svg>

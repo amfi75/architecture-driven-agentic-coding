@@ -4,7 +4,7 @@
 
 **Turn understood requirements into modular software, coordinated parallel work and an autonomously completed result.**
 
-ADAC is a lightweight, text-only method for coding agents. A leading agent acts as orchestrator: it derives an architecture and explicit interfaces from the requirements, assigns bounded work, handles questions and changes, and integrates the result.
+ADAC is a lightweight, text-only method for coding agents. A leading agent acts as orchestrator: it understands required behavior and the existing system, derives architecture and interfaces, assigns bounded ownership, and integrates the result. Complex component owners investigate and design their contribution as well as implement it.
 
 ## Why ADAC?
 
@@ -20,7 +20,9 @@ Use ADAC for work that supports meaningful modular responsibilities and defined 
 
 A local bug fix, typo or inseparable one-off task usually does not justify this coordination. More files or available agents alone are not reasons to use it. A shared-interface decision may need serial coordination before independent implementation can proceed.
 
-For substantial change, reason from requirements to architecture. For incremental change, reason from intended delta to preserved behavior. The orchestrator maintains change-relevant system understanding throughout both; see [changes within the existing architecture](releases/2.4.0-dev.1/core.md#changes-within-the-existing-architecture).
+Functional understanding describes the capabilities and behavior needed; software architecture also accounts for quality, constraints and existing dependencies. Functions need not become separate components. Investigate consequential uncertainty before committing dependent work, and validate the integrated behavior against intended use.
+
+For substantial change, reason from requirements to architecture. For incremental change, reason from intended delta to preserved behavior. The orchestrator maintains change-relevant system understanding throughout both; see [changes within the existing architecture](releases/2.4.0-dev.2/core.md#changes-within-the-existing-architecture).
 
 ## From requirements to a complete result
 
@@ -38,22 +40,22 @@ Give your coding agent the repository link and your task:
 
 > Use the ADAC 2.4 development candidate from https://github.com/amfi75/architecture-driven-agentic-coding/tree/adac-2.4-system-understanding for this task: [describe the task]. Resolve this branch to one fixed commit and read SETUP.md, the core and the applicable method guides from that commit before planning. Preserve any existing project pin unless I explicitly request migration.
 
-The agent follows the **[reading guide](SETUP.md)**: it loads the actual documents, understands the requirements and checks whether ADAC fits. When it does, the orchestrator reads the detailed architecture and coordination guides before planning and gives workers the relevant instructions. A link alone does not mean its contents have been read.
+The agent follows the **[reading guide](SETUP.md)**: it loads the actual documents, understands the requirements and checks whether ADAC fits. When it does, the orchestrator uses the method index to read relevant guides before affected decisions and gives workers the relevant instructions. A link alone does not mean its contents have been read.
 
 For continued use across sessions, ask the agent to add a short pinned repository reference to your existing project instructions. With this approach, the method documents stay in the ADAC repository. For a one-off task, no persistent project change is needed.
 
-You do not need to select files, run a command or install a skill. Direct reading needs repository access. You can also copy the documents into your project for local access, offline use or customization; copying is optional. The [core](releases/2.4.0-dev.1/core.md), [recommendations](releases/2.4.0-dev.1/recommendations.md) and **[method in detail](method/README.md)** provide the rules and practical guidance. The standalone [three-file snapshot](releases/2.4.0-dev.1/README.md) provides a compact local reading option.
+You do not need to select files, run a command or install a skill. Direct reading needs repository access. You can also copy the documents into your project for local access, offline use or customization; copying is optional. The [core](releases/2.4.0-dev.2/core.md), [recommendations](releases/2.4.0-dev.2/recommendations.md) and **[method in detail](method/README.md)** provide the rules and practical guidance. The standalone [three-file snapshot](releases/2.4.0-dev.2/README.md) provides a compact local reading option.
 
 ## Foundations and guidance
 
 ADAC applies established principles of modular design, information hiding, interface contracts and architecture-centered iterative development to coding agents. Read the [architecture foundations](docs/architecture-foundations.md) for sources, the specific ADAC interpretation and its limits. The [design rationale](docs/design-rationale.md) explains choices and human/AI contribution.
 
-The [model-selection recommendations](releases/2.4.0-dev.1/recommendations.md) cover orchestration, implementation and review. They require no automatic router and do not grant permissions.
+The [model-selection recommendations](releases/2.4.0-dev.2/recommendations.md) cover orchestration, component design/research, implementation and review. They require no automatic router and do not grant permissions.
 
 See [verification and experience](docs/verification.md) for the actual scope of evidence. This distribution contains the method, its guidance and repository support files; private project implementations and their evidence are excluded.
 
 ## Version and publication
 
-This branch exercises **ADAC 2.4.0-dev.1**, with candidate core 2.4.0-dev.1 and recommendations 1.2.0. The released [ADAC 2.3.0 snapshot](releases/2.3.0/README.md) remains immutable; `main` remains the stable entry point. Existing projects and global installations do not migrate automatically. See [migration and rollback](docs/versioning-and-migration.md).
+This branch exercises **ADAC 2.4.0-dev.2**, with candidate core 2.4.0-dev.2 and recommendations 1.3.0. Dev.2 adds explicit design/research ownership and intended-use validation while compacting the core and guide reading. The previous [dev.1 snapshot](releases/2.4.0-dev.1/README.md) is preserved. The released [ADAC 2.3.0 snapshot](releases/2.3.0/README.md) remains immutable; `main` remains the stable entry point. Existing projects and global installations do not migrate automatically. See [migration and rollback](docs/versioning-and-migration.md).
 
 [MIT license](LICENSE) · [Provenance](NOTICE.md) · [Contributing](CONTRIBUTING.md) · [Optional maintainer checks](docs/maintaining.md)

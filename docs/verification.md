@@ -1,8 +1,24 @@
 # Verification and practical experience — ADAC 2.4 candidate
 
-This document distinguishes candidate 2.4.0-dev.1 checks from historical ADAC 2.3.0 evidence. Using this candidate does not automatically activate it in global agent instructions. Private project implementations, data and associated verification records are not part of this distribution.
+This document distinguishes candidate 2.4.0-dev.2 checks from previous dev.1 and stable ADAC 2.3.0 evidence. Using this candidate does not automatically activate it in global agent instructions. Private project implementations, data and associated verification records are not part of this distribution.
 
-## Candidate verification
+## Dev.2 verification
+
+Maintainer checks cover local links/anchors, release pointers, manifest contents and generic private-reference patterns; the existing mutation test checks that representative defects are detected. Both earlier release directories are compared byte-for-byte with the candidate's base. Independent read-only review examines retained commitments, new design responsibilities and authority. Changed diagrams are rendered and visually inspected.
+
+Text cases challenge functional-to-component mapping, research before decomposition, complex versus routine assignments, investigation stopping, unavailable specialists, interface-correct but inadequate behavior, internal changes, protected requirements, regression evidence and completion. These evaluate written instructions, not agent delivery performance.
+
+Whitespace-delimited word counts compare the dev.1 base with dev.2:
+
+| Reading scope | Dev.1 | Dev.2 |
+| --- | ---: | ---: |
+| Core | 2,018 | 1,501 |
+| Initial path: SETUP + core + method index; dev.1 also required six guides | 5,760 | 1,972 |
+| First use covering architecture, investigation, delegation, contract change and review: all six guides included once | 5,760 | 3,230 |
+
+The named complex path without first-use concept guidance is 3,049 words in dev.2. Advisory recommendations, glossary and bootstrap/templates are additional when consulted and excluded from both main totals. Counts measure text volume, not exact model tokens, comprehension or proven reliability. The reduction includes guide compaction, not just deferred loading. There is no new adoption trial, demonstration or benchmark.
+
+## Previous dev.1 verification
 
 The candidate is checked for method consistency, links, versions, private references and unchanged 2.3 release files, using the existing maintainer guard and its defect-detection test. Independent read-only review covers the requested semantics and authority boundaries. Diagram changes receive visual inspection.
 

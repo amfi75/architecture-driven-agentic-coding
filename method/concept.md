@@ -1,27 +1,13 @@
 # Architecture-Driven Agentic Coding
 
-ADAC starts with the desired software outcome. It turns requirements into components with clear responsibilities and explicit interfaces, then uses those boundaries to coordinate agents. The [core 2.4.0-dev.1](../releases/2.4.0-dev.1/core.md) contains the shared commitments; these pages expand them with optional working aids.
+ADAC connects requirements to architectural responsibilities, explicit interfaces and coordinated implementation. The [core](../releases/2.4.0-dev.2/core.md) defines the method.
 
-## Three goals
+Its three goals are maintainable modular software of high quality, faster implementation through controlled parallel work, and autonomous completion within agreed requirements.
 
-- Maintainable, modular software with high quality: hide internal decisions, control dependencies and verify both component behavior and integration.
-- Faster implementation through controlled parallel work: assign independent contributions against agreed interfaces, coordinate shared decisions and integrate continuously.
-- Autonomous completion: the orchestrator solves internal problems, adjusts the design and keeps working until the agreed acceptance criteria are met.
+Functional understanding describes the capabilities and behavior needed. Software architecture realizes them while addressing quality, constraints and existing dependencies. One function may involve several components; one component may support several functions. Choose boundaries that hide consequential implementation decisions and localize change. Work allocation follows those boundaries.
 
-## Architecture enables the work allocation
+The orchestrator retains the whole-system view. A complex component assignment includes design and investigation as well as implementation; a routine coding assignment can be narrower. Explicit ownership avoids leaving design between tasks. Review challenges the integrated result.
 
-A component is a responsibility with an interface, not necessarily a folder, service or horizontal layer. Requirements and quality goals determine the decomposition. Information hiding reduces how much one worker must know about another's implementation. Contracts make assumptions explicit enough to develop and test compatible contributions.
+A modular monolith can benefit. A local fix or inseparable task generally needs ordinary proportionate work. More agents and more folders do not establish useful independence.
 
-The orchestrator preserves a view of the whole system. It covers cross-cutting concerns, coordinates dependencies and owns integration. Workers receive derived requirements and bounded authority. An independent reviewer checks the result rather than helping implement it.
-
-An owner may implement across internal components within the approved scope. This does not remove architecture boundaries: the same component responsibilities, interfaces and acceptance apply. There is no requirement to assign one agent to every layer.
-
-## Proportionate use
-
-Choose ADAC when meaningful modular responsibilities and verifiable interfaces support the work. A modular monolith can qualify. A small local change or inseparable task normally does not need the setup. Do not manufacture boundaries to occupy agents. Temporary shared-interface work can be coordinated serially within an otherwise parallel project.
-
-## Text, not a controller
-
-The three-file package requires no executable router, Python package or provider integration. Instructions are inspectable, portable, adaptable to the existing repository and easy to version. Agents and their harness must still follow them; text alone does not enforce edit isolation or supply missing capabilities. Tool availability determines whether parallel execution and independent review are possible. Missing required review cannot be relabeled as success.
-
-See [operating model](operating-model.md), [parallel work](parallel-agent-workflow.md) and [theoretical foundations](../docs/architecture-foundations.md).
+ADAC uses readable, versionable text with no required runtime. Its portability does not guarantee every agent's compliance. Host capabilities determine available execution and review; missing required review remains unfinished work.

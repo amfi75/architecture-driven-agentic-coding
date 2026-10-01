@@ -1,6 +1,6 @@
 # Working in this repository
 
-The [ADAC 2.4.0-dev.1 core](releases/2.4.0-dev.1/core.md) defines the method; [model/task recommendations](releases/2.4.0-dev.1/recommendations.md) are advisory. Preserve the current approved task contract and any explicit project pin.
+The [ADAC 2.4.0-dev.2 core](releases/2.4.0-dev.2/core.md) defines the method; [model/task recommendations](releases/2.4.0-dev.2/recommendations.md) are advisory. Preserve the current approved task contract and any explicit project pin.
 
 Start with requirements. Use ADAC for meaningful modular work, not merely because multiple agents are available. The leading agent orchestrates architecture, bounded worker assignments, change requests and integration; it may also implement. Workers stay within their assignments; independent reviewers remain read-only.
 

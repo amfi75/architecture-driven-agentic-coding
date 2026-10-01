@@ -12,12 +12,13 @@
 | --- | --- | --- | --- |
 | Requirement coverage and result | | | |
 | Architecture, contracts and integration | | | |
+| Design investigation and intended-use validation | | | |
 | Scope and change authority | | | |
 
 - Requirement preservation and any unauthorized change:
 - Component responsibilities, private internals and coupling:
 - Shared contract revisions and dependent consumers:
-- Derived worker requirements and cross-cutting coverage:
+- Derived worker requirements, design ownership and cross-cutting coverage:
 - Reuse, dependencies and targeted user unblocks:
 - Tests performed/not performed and actual outputs:
 

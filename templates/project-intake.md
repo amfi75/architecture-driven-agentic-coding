@@ -4,7 +4,8 @@
 
 - Purpose, users and downstream systems:
 - Required behavior and critical workflows:
-- Quality goals and observable acceptance:
+- Quality goals, intended-use scenarios and observable acceptance:
+- Capabilities/behavioral relationships and consequential design uncertainties:
 - Binding compatibility, privacy, security, cost or technology constraints:
 - Non-goals, authority and unresolved material ambiguity:
 

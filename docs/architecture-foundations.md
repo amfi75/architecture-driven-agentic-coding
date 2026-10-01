@@ -1,6 +1,6 @@
 # Architecture foundations
 
-ADAC applies established software architecture ideas to coordinated coding agents. It does not claim to invent modularity or prove that agents always produce better software. The [core](../releases/2.4.0-dev.1/core.md) is self-contained; these sources explain the design rationale rather than add required reading or hidden rules.
+ADAC applies established software architecture ideas to coordinated coding agents. It does not claim to invent modularity or prove that agents always produce better software. The [core](../releases/2.4.0-dev.2/core.md) is self-contained; these sources explain the design rationale rather than add required reading or hidden rules.
 
 ## Information hiding and meaningful modules
 
@@ -13,6 +13,12 @@ The agent-specific adaptation is to turn those boundaries into assignments and s
 The Software Engineering Institute's Attribute-Driven Design method derives architecture from requirements, including quality attributes, functionality and constraints, and refines the design iteratively. ADAC therefore starts with requirements, explains architectural choices through quality needs, and develops affected interfaces before dependent implementation. It does not require a complete frozen design before learning from code. [SEI, ADD Version 2.0](https://sei.cmu.edu/library/attribute-driven-design-add-version-20/) and [ADD collection](https://www.sei.cmu.edu/library/attribute-driven-design-method-collection/).
 
 ADAC is a lightweight adaptation, not a claim to implement every ADD activity or provide ADD certification. The orchestrator can revise derived architecture while preserving the agreed overall requirements.
+
+## Functional analysis and recursive design
+
+NASA describes logical decomposition as identifying required functions and allocating derived requirements, with feedback from subsystem designers into the architecture. ADAC uses functional understanding to inform software boundaries alongside quality and constraints; it does not require a separate functional-architecture phase or adopt the NASA lifecycle. [NASA, Logical Decomposition](https://www.nasa.gov/reference/4-3-logical-decomposition/).
+
+ADD steps 4, 7 and 8 connect investigation of alternatives to allocated responsibilities, functional/quality requirements and recursive refinement. ADAC applies this through delegated component design ownership while the orchestrator retains system decisions. Research can precede component selection. This agent-role mapping is ADAC's proposal, not an agent topology prescribed by those sources.
 
 ## Contracts describe behavior as well as shape
 
@@ -39,6 +45,14 @@ Michael Nygard's short architecture decision records capture context, decisions,
 Parnas and Clements also distinguish a useful rational design explanation from the messy reality of discovery. ADAC preserves actual chronology and evidence while documenting the resulting rationale; it does not invent a linear success story. [Parnas and Clements, A Rational Design Process: How and Why to Fake It](https://jpaulgibson.synology.me/~jpaulgibson/TSP/Teaching/Teaching-ReadingMaterial/ParnasClements86.pdf).
 
 The public description of ISO/IEC/IEEE 42010 provides broader context for architecture descriptions. ADAC makes no conformance claim; the full standard was not used as a normative checklist. [ISO/IEC/IEEE 42010:2022 overview](https://www.iso.org/standard/74393.html).
+
+## Evidence for design and intended use
+
+NASA distinguishes checking specified obligations from validating intended use in the operational environment. ADAC applies both: component checks and integrated scenarios derived from the agreement. An implemented interface alone does not establish useful behavior. [NASA, Product Validation](https://www.nasa.gov/reference/5-4-product-validation/).
+
+SEI's strategic-prototyping work targets unresolved architectural risks and weighs the cost of evidence. ADAC adopts proportionate investigation and explicit stopping conditions; it does not mandate prototypes, research reports or external browsing for routine work. [SEI, Strategic Prototyping](https://www.sei.cmu.edu/blog/prototyping-for-developing-big-data-systems/).
+
+The MAST study identifies system-design, inter-agent alignment and verification failures in evaluated multi-agent frameworks. It motivates attention to assignments and evidence, but does not validate ADAC, current models or a particular added agent role. [Cemri et al., Why Do Multi-Agent LLM Systems Fail?](https://arxiv.org/html/2503.13657v3).
 
 ## What these foundations support
 

@@ -8,7 +8,7 @@ This optional Delivery Contract records the agreement; it differs from a softwar
 - Binding constraints, including actual compatibility, privacy/security and technology commitments:
 - Non-goals:
 - Authorized scope, deployment/publication and external actions:
-- Acceptance criteria and required evidence:
+- Acceptance criteria, representative intended-use scenarios and required evidence:
 - Approved revision and approval record:
 - Explicitly approved requirement deltas:
 

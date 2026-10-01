@@ -1,64 +1,25 @@
-# Read and use ADAC from the repository
+# Read ADAC from the repository
 
-The recommended entry is a repository link and a task. Read the documents directly from that repository at one fixed revision. No local copy is needed; copying the documents is also supported for local access, offline use or customization. The filename SETUP.md is retained as the stable agent entry point; no installer, skill or runtime is required.
+Give the agent the repository link and your task. No installer, skill or local copy is required. Copying remains useful for offline access or customization.
 
-The [core](releases/2.4.0-dev.1/core.md) defines the method. The detailed guides explain its practical application. Reading a link means retrieving and reading the actual document content, not assuming the link itself supplies the instructions.
+## Select and read one revision
 
-## 1. Select an accessible, fixed revision
+Honor an existing project pin. Otherwise resolve the requested source to an exact commit; this candidate is **2.4.0-dev.2** on `adac-2.4-system-understanding`. Retrieve actual document contents from that same commit and report the revision and documents read. A link alone supplies no instructions. If access fails or a pinned release is missing, report it; do not invent content or silently substitute a version.
 
-This is the ADAC 2.4.0-dev.1 development branch, `adac-2.4-system-understanding`. For an explicitly requested candidate trial, resolve that branch rather than defaulting to `main`. Use the supplied repository and honor any existing project pin or explicitly requested revision. Otherwise resolve the current source to one exact commit for this task and state it briefly. Read every method document from that same revision; a moving branch or version label alone is not a complete document pin.
+Read the [core](releases/2.4.0-dev.2/core.md), understand the task and assess suitability. When ADAC applies, read the [method index](method/README.md) and the guides triggered by the work before the affected decisions. The core contains all shared commitments; guides explain their application. Consult [capability advice](releases/2.4.0-dev.2/recommendations.md) when useful. Workers receive relevant instructions and a complete bounded assignment from the orchestrator, without assumed context inheritance.
 
-Use revision-specific document links or the repository's read API with the agent's existing access. Verify that the retrieved content corresponds to the selected revision. Repository identity and stored references must not contain credentials. If access fails, report the specific access problem rather than claiming to have read the method. Do not invent content or silently substitute another version.
+## Continued use and local copies
 
-Existing project instructions, requirements and permissions remain authoritative. A method link does not authorize replacing a project pin, changing global configuration or starting unapproved product implementation.
-
-## 2. Read the rules and the detailed method
-
-First read [core 2.4.0-dev.1](releases/2.4.0-dev.1/core.md), understand the requested outcome and assess ADAC suitability. A local fix or inseparable task remains proportionate; the presence of an ADAC reference does not make every task an ADAC project.
-
-When ADAC is selected, the orchestrator reads the following documents at the chosen revision **before architecture and task planning**:
-
-- [Method overview](method/README.md)
-- [Concept](method/concept.md)
-- [Operating model](method/operating-model.md)
-- [Components and public surfaces](method/public-surfaces.md)
-- [Controlled parallel work](method/parallel-agent-workflow.md)
-- [Change requests](method/change-request-workflow.md)
-- [Independent review](method/review-model.md)
-
-Use the [glossary](method/glossary.md) for terminology and consult [model/task recommendations](releases/2.4.0-dev.1/recommendations.md) as adaptable advice. Use [existing-repository](bootstrap/existing-repository.md) or [new-repository](bootstrap/new-repository.md) planning guidance as applicable. Templates and archetypes are references to consult when useful, not files to install automatically.
-
-Give each worker its derived requirements, architecture context, interface revision, scope, dependencies, acceptance and relevant method instructions. Do not assume sub-agents inherit the orchestrator's context or access. Supply the relevant text when needed so a worker need not independently fetch the whole repository. Workers request interface, neighboring-component and scope changes through the orchestrator.
-
-For substantial work, independently review the complete initial plan and obtain user approval before implementation. Then integrate, verify, independently review and correct until the agreed result passes. Internal changes remain the orchestrator's responsibility within overall requirements; necessary changes to those requirements or binding constraints need user approval.
-
-## 3. Distinguish this session from continued project use
-
-For a one-off request, reading the documents is enough to establish the method context for this session. A local package or persistent instruction change is not needed. State the selected revision and which documents were actually read.
-
-For continued use across sessions, a short pinned reference in the project's existing agent instructions is sufficient, using the entry point the host actually loads. It can point to the repository or to a local copy, if that is how the project uses ADAC. Preserve unrelated instructions and existing pins. Create a supported project instruction file only when its loading mechanism is known and the requested integration authorizes it.
-
-For direct repository reading, a compact reference can follow this form. Replace placeholders with actual repository/revision links and verify them before saving:
+Session reading requires no persistent change. For continued use, when authorized, add a short reference to the project's existing agent instructions using an entry point the host actually loads:
 
 ```text
-ADAC reference
-Source: <repository URL without credentials>
+ADAC source: <credential-free repository URL>
 Revision: <full commit ID>
-Read <revision-specific SETUP.md URL> and the core before assessing ADAC
-suitability. When ADAC is selected, retrieve and read the method guides
-listed there before architecture/task planning; pass relevant instructions
-to workers. Preserve the selected pin unless an update is requested, and retain the
-project's requirements, permissions and existing approval gates.
+Read <revision-specific SETUP.md URL> and its core. When ADAC fits,
+use the method index to read relevant guides before affected decisions.
+Preserve project requirements, permissions and pins; migrate only on request.
 ```
 
-Read back the entry and check its links. Report current-session reading and persistent integration separately. A link written to disk is not evidence that a future agent has read it, and a host without persistent instruction support must not be reported as configured for future sessions. No unperformed host/adoption test is implied.
+Verify saved links and distinguish session reading from persistent configuration. Neither proves future agent compliance. Local copies retain source revision, working relative links and identified adaptations. On an explicit update, review differences before changing the reference; removing ADAC means removing only its reference. Preserve unrelated instructions and copies. Global changes need their own authority.
 
-## Optional local copies and updates
-
-Direct reading requires repository access whenever the agent needs to load the pinned documents. If that is unavailable, explain the missing access; an available local copy can also provide the documents.
-
-Copying is optional and is useful for local access, offline work or project-specific customization. Keep the source revision with the copy, preserve the relative links between the documents you use, and point project instructions to the local entry point. If you adapt the text, identify the local changes so agents can distinguish the project variant from the upstream method. Existing requirements and permissions still govern its use.
-
-Changes upstream do not silently change the chosen revision. On an explicit update request, review the differences, preserve binding commitments and update only the relevant reference. To stop continued use, remove only the ADAC reference, not the rest of the project's instructions. Existing local copies from earlier setups are not deleted automatically. Global instructions and other projects require their own authority.
-
-The [publication manifest](maintainer/public-files.txt) is for maintainers preparing this repository's release. It is not a list of files agents must copy into a project.
+The [standalone release](releases/2.4.0-dev.2/README.md) is another reading option. The [publication manifest](maintainer/public-files.txt) is maintainer tooling, not an installation list.

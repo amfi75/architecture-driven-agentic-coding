@@ -1,6 +1,6 @@
 # Versioning and migration
 
-This development branch uses **ADAC 2.4.0-dev.1**, candidate core 2.4.0-dev.1 and recommendations 1.2.0. The prerelease suffix marks a candidate for live experimentation, not a stable release. The released 2.3.0 snapshot remains immutable and available on `main`. Core commitments and adaptable recommendations have separate versions so advice can evolve without silently changing authority.
+This development branch uses **ADAC 2.4.0-dev.2**, candidate core 2.4.0-dev.2 and recommendations 1.3.0. The prerelease suffix marks a candidate for live experimentation, not a stable release. The released 2.3.0 snapshot remains immutable and available on `main`. Core commitments and adaptable recommendations have separate versions so advice can evolve without silently changing authority.
 
 ## History and reconstruction
 
@@ -10,7 +10,7 @@ Earlier snapshots and source history remain preserved in the original repository
 
 ## Repository reading and provenance
 
-The recommended [reading workflow](../SETUP.md) retrieves method documents directly at one exact repository commit. A task records its selected revision; continued project use can keep a short reference in existing agent instructions. No vendored package is required. The candidate core makes system-understanding ownership and safe incremental change explicit. Recommendations retain advice version 1.2.0; only the candidate copy's compatibility statement changes. All released 2.3.0 files remain unchanged. The commit also pins the detailed guides, which can evolve independently of the core version.
+The recommended [reading workflow](../SETUP.md) retrieves method documents directly at one exact repository commit. A task records its selected revision; continued project use can keep a short reference in existing agent instructions. No vendored package is required. Dev.1 made system-understanding ownership and safe incremental change explicit. Dev.2 retains these commitments and adds functional understanding, delegated design/research responsibility, bounded investigation and intended-use validation. Advice 1.3.0 distinguishes complex design from routine implementation. Both 2.3.0 and dev.1 snapshots remain byte-identical. The commit also pins the detailed guides, which can evolve independently of the core version.
 
 The three-file snapshot provides a compact local reading option. Local copies can also support project-specific customization; record the source revision and distinguish local changes from upstream text. Existing local copies are not deleted or migrated automatically.
 
@@ -26,7 +26,9 @@ A migration review should address:
 - worker assignments and orchestrator change requests;
 - model recommendations as advice, never permissions or a required router;
 - retained independent review and observable acceptance;
-- ongoing orchestrator ownership of system understanding and proportionate delta/preservation evidence.
+- ongoing orchestrator ownership of system understanding and proportionate delta/preservation evidence;
+- explicit component design ownership, consequential investigation and intended-use evidence;
+- the shorter complete core and conditional guide reading, replacing the default six-guide preload.
 
 Record the chosen revision and authorization, update only the intended references, and verify access to the pinned documents. Shared/global instruction changes require their own review and explicit authority. This release does not activate a global migration or change existing product pins.
 

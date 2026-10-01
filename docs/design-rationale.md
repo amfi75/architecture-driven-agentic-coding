@@ -38,9 +38,17 @@ Text instructions are portable, transparent, easy to copy, version and inspect, 
 
 Autonomy includes testing, observation, integration, independent review and remediation. Neither internal PASS reports nor theoretical citations establish better engineering outcomes by themselves. Acceptance must refer to the agreed result and actual evidence. Private project results are not public release evidence. Prior experiments do not certify the corrected method across all environments.
 
+## Compact instructions with explicit design responsibility
+
+Dev.2 keeps the complete commitments in a structured natural-language core. Each responsibility and return path has one primary definition; the method index routes readers to explanations when relevant. This reduces repeated context without introducing a DSL or executable controller. Compactness is checked across both first reading and complex-task reading, while review checks retained semantics. Word counts do not prove model reliability.
+
+Functional understanding informs software architecture alongside quality and constraints. Complex component owners receive purpose and design discretion, investigate consequential unknowns and provide evidence of intended use. These are explicit worker responsibilities, not a mandatory additional agent hierarchy. The orchestrator retains boundaries and integrated acceptance.
+
 ## Human and AI contribution
 
 The maintainer defined and applied the method in practice, reports about six months of successful use, and challenged the loss of architecture-centered decomposition. He specified the restored priorities: requirements first, controlled fan-out, explicit interfaces, an agent orchestrator, derived worker requirements, internal change requests and autonomy within overall requirements. He also required advisory model guidance, clear speed benefits, private review before publication and no new demo work for this repair.
+
+The maintainer also identified inadequate design depth despite superficially fulfilled feature requirements, requested research grounding, and required compaction without losing functionality. Dev.2 applies those priorities to bounded investigation, design ownership and validation.
 
 AI assisted repository/history inspection, research, drafting, diagrams, consistency checks and independent review. The correction is an AI-assisted implementation of those human decisions; it does not justify attributing every line of implementation or every test execution to the maintainer. The agent's earlier simplification went too far, and the maintainer identified the problem.
 

@@ -1,23 +1,16 @@
-# The method in detail
+# Method guides
 
-These pages explain ADAC's architecture and working practices in more detail. The [ADAC 2.4.0-dev.1 core](../releases/2.4.0-dev.1/core.md) contains the complete shared commitments; [model/task recommendations](../releases/2.4.0-dev.1/recommendations.md) are adaptable advice. These pages are written for agents as well as developers. The recommended [repository-reading workflow](../SETUP.md) instructs the orchestrator to retrieve and read the six working guides before architecture and task planning when ADAC is selected. Consult the glossary as needed; workers receive guidance relevant to their assignments. The guides explain the core rather than add a separate set of commitments.
+The [core](../releases/2.4.0-dev.2/core.md) contains all shared commitments. These guides explain application; read the relevant row before the affected decision, at the same pinned revision. Combine readings when several triggers apply; do not preload every guide for every task.
 
-Start with requirements, assess whether meaningful modular decomposition helps, then derive architecture, interfaces and work packages. A leading agent orchestrates implementation, worker change requests, integration and verification. The delivery loop supports that architecture-driven work.
-
-## Reading guide
-
-| Page | What it explains |
+| Work to undertake | Read |
 | --- | --- |
-| [Concept](concept.md) | The three goals, architectural decomposition and when ADAC is useful. |
-| [Operating model](operating-model.md) | The complete path from requirements and initial planning to autonomous delivery and handoff. |
-| [Components and public surfaces](public-surfaces.md) | Responsibilities, information hiding, dependencies and semantic interface contracts. |
-| [Controlled parallel work](parallel-agent-workflow.md) | Readiness for fan-out, complete worker assignments, coordination and integration. |
-| [Change requests](change-request-workflow.md) | How workers request interface, neighboring-component or scope changes, and how the orchestrator resolves them. |
-| [Independent review](review-model.md) | Plan and result review, concrete evidence, correction and acceptance. |
-| [Glossary](glossary.md) | Shared terms, including overall requirements, derived decisions and the orchestrator role. |
+| First use or uncertainty about suitability | [Concept](concept.md) |
+| Architecture or component/interface design | [Components and public surfaces](public-surfaces.md) |
+| Consequential design uncertainty, component investigation or delivery planning | [Operating model](operating-model.md) |
+| Delegating work or arranging parallel execution | [Controlled parallel work](parallel-agent-workflow.md) |
+| Resolving an interface, neighboring-component or assignment change | [Change requests](change-request-workflow.md) |
+| Independent plan or result review | [Review](review-model.md) |
 
-## Related practical guidance
+Use the [glossary](glossary.md) for unfamiliar terms. [Capability recommendations](../releases/2.4.0-dev.2/recommendations.md), [bootstrap](../bootstrap/README.md) and [templates](../templates/task-package.md) are optional aids. Give workers only relevant instructions and sufficient project context.
 
-Use [bootstrap](../bootstrap/README.md) to start in a new or existing repository and the [task-package template](../templates/task-package.md) for a worker assignment. The [loop guide](../docs/agent-loop.md) illustrates return paths; the [architecture foundations](../docs/architecture-foundations.md) explain the theoretical sources and their application to agents.
-
-For the recommended direct-reading workflow, use the [agent reading guide](../SETUP.md). The [three-file release](../releases/2.4.0-dev.1/README.md) provides a compact local reading option; copying and customization are optional. For current evidence and its limits, see [verification](../docs/verification.md).
+[Architecture foundations](../docs/architecture-foundations.md) explain the research and its limits; the [loop guide](../docs/agent-loop.md) illustrates transitions. Neither is prerequisite reading. The [standalone snapshot](../releases/2.4.0-dev.2/README.md) is self-contained without these guides.

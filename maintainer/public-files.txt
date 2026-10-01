@@ -48,6 +48,9 @@ releases/2.3.0/recommendations.md
 releases/2.4.0-dev.1/README.md
 releases/2.4.0-dev.1/core.md
 releases/2.4.0-dev.1/recommendations.md
+releases/2.4.0-dev.2/README.md
+releases/2.4.0-dev.2/core.md
+releases/2.4.0-dev.2/recommendations.md
 templates/agent.md
 templates/change-request.md
 templates/contract.md
